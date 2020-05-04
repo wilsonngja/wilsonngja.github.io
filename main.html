@@ -1,268 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;900&display=swap" rel="stylesheet">
+        <meta charset = "utf-8">
+        <meta name = "viewport" content="width=device-width , initial-state=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <title>Wilson Ng Jing An</title>
-        <meta name = "viewport" content= "width=device-width">
-        <meta name = "description" content = "Wilson Ng's portfolio">
-        <meta name = "keywords" content ="programming, SP, awards, project, code, module">
-        <meta name = "author" content = "Wilson Ng Jing An">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/animate.css">
-    
-        <!-- Script for typewriter -->
-        <script>
-            var i = 0;
-            var j = 0;
-            var val = 0;
-            var txt = 'HELLO! MY NAME IS';
-            var txt2 = 'WILSON NG';
-            var speed = 100;
-            
-            function typeWriter() {
-              if (i < txt.length) {
-                document.getElementById("name1").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-              }
-              if (i== txt.length) val = 1;
-              if (val ==1){
-                if (j < txt2.length) {
-                    document.getElementById("name2").innerHTML += txt2.charAt(j);
-                    j++;
-                    setTimeout(typeWriter, speed);
-              }
-              }
-            }
-        </script> 
-        
-        
-        
     </head>
 
-
-    <body onload = "typeWriter()">
-
-        <!-- Header -->
+    <body>
         <header>
-            <div class = "container">
-                <nav>
-                    <ul>
-                        <li class="current"><a href= "main.html" class="hvr-underline-from-left">Home</a></li>
-                        <li class="current"><a href= "#aboutme" class="hvr-underline-from-left">About Me</a></li>
-                        <li class="current"><a href= "#projectheading" class="hvr-underline-from-left">Projects</a></li>
-                        <li class="current"><a href= "#award" class="hvr-underline-from-left">Achievements</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-sm fixed-top justify-content-center">
+                <ul class= "navbar-nav ">
+                    <li class="nav-item"><a class = "nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="#">About Me</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="#">Achievements</a></li>
+                </ul>
+            </nav>
         </header>
-
-
-        <!-- Title Page-->
-        <section id="title" >
-            <div class = "container ">
-                <h1 class = "name1" id = "name1" ></h1>
-                <h1 class = "name2 hvr-pulse-grow" id = "name2"></h1>
-                
-            </div>
-            <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank"><img src= "img/facebook.png"></a>
-            <a href= "https://www.instagram.com/wilsonngja/" target="_blank"><img src= "img/instagram.png"></a>
-            <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank"><img src= "img/linkedin_logo.png"></a>
-        </section>
-
-
-        <!--About Me Page-->
-        <section id="intro">
-            <div><img src="img/img_avatar3_1.jpg"></div>
-            <div class = "flex_container">
-                <h1 id="aboutme" class="box_1">>About Me<span class = "animated infinite fadeIn">_</span></h1>
-                <p class= "box_2">
-                    My passion lies in programming but unlike just any programming, I find more joy in programming that resolves prevalent issues rather than just for commercial purposes. Examples are such as programs that can protect personal data. Apart from programming, I also love to play sports such as Table Tennis and Tchoukball.</p>
-                    <br>
-                    <p>I've committed in projects and one of which is a Data Visualisation project which I've done with CSIT. This projects has helped me to pick up knowledge out of my course such as Web Scraping and Data Cleaning.</p>
-                    <br>
-                    <p>Currently serving my national service as a Transport Operator (Service) in the Air force, I make use of my weekend to keep up with the digital trends and technology to better prepare me for my university.</p>
-            </div>
-
-            <!--Skillset-->
-            <div id= "skillset" >
-                <div><h1>>My Skills<span class = "animated infinite fadeIn">_</span></h1></div>
-                <li>
-                    <h3>HTML</h3>
-                    <span class="bar"><span class="html" data-scroll></span></span>
-                </li>
-                <li>
-                    <h3>CSS</h3>
-                    <span class="bar"><span class="css" data-scroll></span></span>
-                </li>
-                <li>
-                    <h3>C/C++</h3>
-                    <span class="bar"><span class="cpp" data-scroll></span></span>
-                </li>
-                <li>
-                    <h3>Java</h3>
-                    <span class="bar"><span class="java" data-scroll></span></span>
-                </li>
-                <li>
-                    <h3>Python</h3>
-                    <span class="bar"><span class="python" data-scroll></span></span>
-                </li>
-                <li>
-                    <h3>Computer Networking</h3>
-                    <span class="bar"><span class="networking" data-scroll></span></span>
-                </li>
-            </div>
-        </section>
-
-
-        <!--Project-->
-        <section id="project">
-            <div>
-                <br><br><h1 class='project_title' id="projectheading">>PROJECTS<span class = "animated infinite fadeIn">_</span></h1>
-            </div>
+        <!--Navigation Bar-->
         
-            <div>
-                <div class= "flex_container2">
-                    <div class = "image hvr-glow">
-                        <img src = "img/visualisation.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Data Visualisation</h2>
-                        <div class="overlay">
-                            <div class="text">Data Visualisation is a project done during my 3-months internship with Centre for Strategic Infocomm Technologies (CSIT). This project required HTML and Python prerequisite. Web scraping and data cleaning were conducted before data is being visualisation on a correlation graph with node representations. </div>
-                        </div>
-                    </div>
-                    <div class = "image hvr-glow">
-                        <img src = "img/motion.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Deep Learning for <br>Human Motion Detection</h2>
-                        <div class="overlay">
-                            <div class="text">This project is done in group as my final year project in SP which involves detecting human motion on Personal Mobility Devices (PMD). The inspiration was from the increasing trend of PMDs accidents in Singapore. YOLOv3 Framework is used for detection with images trained from scratch. My team also used Shi-Tomashi Corner Detection algorithm to identify edges to calculate speed of pedesterian on PMDs.</div>
-                        </div>
-                    </div>
-                    <div class = "image hvr-glow">
-                        <img src = "img/microprocessor.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Smart Washing <br>Machine System</h2>
-                        <div class="overlay">
-                            <div class="text">Smart Washing Machine System is an integrated project done by the whole class. The class are splitted into groups and assigned different washing machine components to program in C Language. My team were tasked to program a Stepper motor to simulate washing motion. At the end, the whole class integrated the task and demostrated to our lecturer. </div>
-                        </div>
-                    </div>
-                </div>
-                <div class= "flex_container2">
-                    <div class = "image hvr-glow">
-                        <img src = "img/text.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Keywords Identifier</h2>
-                        <div class="overlay">
-                            <div class="text">This is a side project that I programmed as a hobby in Python language. By making use to Natural Language Toolkit (NLTK) library to identify the keywords. Filtering is then carried out to remove stopwords and other unwanted data such as '\t' and '\n'. After the cleaning is done, keywords is highlighted by using 'Document' Library available.</div>
-                        </div>
-                    </div>
-                    <div class = "image hvr-glow">
-                        <img src = "img/encryption.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Substitution Cipher</h2>
-                        <div class="overlay">
-                            <div class="text">Substitution Cipher is a project assigned during my Data Structure and Algorithm (DSA) class. The deliverables are to conduct encryption and decryption from a source file. Encryption is done by changing each alphabet of a text and adding a random assigned alphabets for every few alphabets. My team and I also added features by allowing user to encrypt from user input.</div>
-                        </div>
-                    </div>
-                    <div class = "image hvr-glow">
-                        <img src = "img/cloud.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Project: Nimble</h2>
-                        <div class="overlay">
-                            <div class="text">Project: Nimble is done during my Cloud Computing Service module as an assignment. In this assignment my friend and I played the role as a cloud broker and presented our idea to our lecturer, which played the role as a client. The requirement was made known to us and we identified the benefits and drawbacks. We also calculated the Total Cost of Ownership before presenting to our lecturer.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class= "flex_container2">
-                    <div class = "image hvr-glow">
-                        <img src = "img/bicycle.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Bicycle Locking System</h2>
-                        <div class="overlay">
-                            <div class="text">Bicycle Locking System is done during the final semester in my ITE. This project involves knowledge in Mechanical, Electrical, Electronics and Programming. I handled the programming section and came up with a program which allows locking system using a one-time password. The programming section integrates with the automated locking mechanism, keypad, LCD and sensors.  </div>
-                        </div>
-                    </div>
-                    <div class = "image hvr-glow">
-                        <img src = "img/home.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Smart Home System</h2>
-                        <div class="overlay">
-                            <div class="text">Smart Home System was done as a project in my Object Oriented Programming (OOP) module. During this module, we programmed a simulation of a Graphical User Interface (GUI). Within my GUI, I made use of images, button and slider to create an interface which allows user to toggle home appliances. The coding was done in Java Language.</div>
-                        </div>
-                    </div>
-                    <div class = "image hvr-glow">
-                        <img src = "img/shoerack.png" width="150vw" height="150vw">
-                        <h2 class = "heading">Automated Shoe Rack</h2>
-                        <div class="overlay">
-                            <div class="text">My team and I created a prototype of an Automated Shoe Rack during our Microcontroller Application module. During this module, we were tasked to come up with a project by integrating microcontroller in it. We programmed the lifting mechanism using a stepper motor and a password system by using LCD and Keypad. We are making use of Microchip PIC18F4550 chip to using C Langague.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <section id="titlepage">
+            <div class= "bg"></div>
         </section>
 
 
-        <!--Achievements-->
-        <section id="achievements">
-            <div>
-                <br id = "award"><br>
-                <div class="flex_container3">
-                    <div class = "award-image hvr-glow2">
-                        <img src = "img/prize.png" width="100vw" height="100vw">
-                        <h2 class = "heading">SCI Sanmina System Prize</h2>
-                        <div class="overlay2">
-                            <div class="text2">Awarded to Top 5% of graduants of SP Computer Engineering</div>
-                        </div>
-                    </div>
-                    <div class = "award-image hvr-glow2">
-                        <img src = "img/prize.png" width="100vw" height="100vw">
-                        <h2 class = "heading">Diploma with Merit</h2>
-                        <div class="overlay2">
-                            <div class="text2">Awarded to Top 10% of graduants of SP.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex_container3">
-                    <div class = "award-image hvr-glow2">
-                        <img src = "img/prize.png" width="100vw" height="100vw">
-                        <h2 class = "heading">Model Student Award</h2>
-                        <div class="overlay2">
-                            <div class="text2">Awarded to examplery student which displays all-rounded values in SP.</div>
-                        </div>
-                    </div>
-                    <h1>ACHIEVEMENTS</h1>
-                    <div class = "award-image hvr-glow2">
-                        <img src = "img/prize.png" width="100vw" height="100vw">
-                        <h2 class = "heading">POL-ITE Games Table Tennis Champion 2019</h2>
-                        <div class="overlay2">
-                            <div class="text2">Annual Polytechnic and ITE joint competition in Table Tennis. </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex_container3">
-                    <div class = "award-image hvr-glow2">
-                        <img src = "img/prize.png" width="100vw" height="100vw">
-                        <h2 class = "heading">Director Honour Roll AY2016/2017 & AY2017/2018</h2>
-                        <div class="overlay2">
-                            <div class="text2">Awarded to top 10% of student in each academic year.</div>
-                        </div>
-                    </div>
-                    <div class = "award-image hvr-glow2">
-                        <img src = "img/prize.png" width="100vw" height="100vw">
-                        <h2 class = "heading">CSIT Diploma Scholarship</h2>
-                        <div class="overlay2">
-                            <div class="text2">Scholarship given to polytechnic student in selected course.</div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-        </section>
-
-        <!--Script for ScrollOut-->
-        <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-
-    <script>
-        ScrollOut();
-    </script>
     </body>
-
-    <footer>
-        <p><strong>Copyright &copy; 2020 Wilson Ng Jing An</strong></p>
-        <br>
-    </footer>
 </html>
-
-
