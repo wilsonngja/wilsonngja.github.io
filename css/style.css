@@ -1,3 +1,5 @@
+
+
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -9,10 +11,14 @@ body{
 }
 
 /*Navbar*/
+
+
 .navbar{
   justify-content: center;
   background-color: #252525;
   border-bottom:#ffff4d 5px solid;
+ 
+  
 }
 /*Content in Navbar*/
 .nav-link{
@@ -20,9 +26,13 @@ body{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-left: 1vw;
+  margin-left: 4vw;
+  
 }
 
+.nav-link:hover{
+  color: #ffff4d;
+}   
 
 .bg{
   background-image: url("../img/background.jpg");
@@ -45,7 +55,7 @@ body{
   font-size: 8vw;
   color:#ffff4d; 
   margin-bottom: 7px;
-  text-shadow: 0 0 5px #ffffff, 0 0 15px #ffff4d;
+  text-shadow: 0 0 5px #ffffff, 0 0 25px #ffff4d;
   text-align: center;
 }
 
@@ -56,3 +66,111 @@ body{
   margin-left: 3vw;
   margin-right: 3vw;
   }
+
+
+#aboutmepage{
+  background: #202020;
+  height: 115vh;
+  width:100%;
+  border-bottom: 3px solid #ffff4d;
+}
+
+#aboutmepage .row{
+  width:100%;
+}
+#aboutmepage img{
+  padding-top: 5vh;
+  padding-left: 2vw;
+  width:25%;
+  height:25%;
+  border-radius: 50%;
+}
+
+#aboutmepage h1{
+  color: #6666ff;
+  font-size: 3.5vw;
+  padding-top:5vh;
+  padding-left: 2vw;
+  padding-bottom: 25px;
+  text-shadow: 0 0 10px #6666ff;
+}
+
+#aboutmepage p{
+  font-size:1.25vw;
+  color:#FFFFFF;
+  padding-left: 2vw;
+}
+
+.progress{
+  margin-left: 10%;
+  margin-right:20%;
+}
+
+.pb p{
+  margin-left: 8.5%;
+  padding-top: 1vh;
+}
+.progress {
+  box-shadow: 0 0 30px #ffff4d;
+}
+
+#html-scroll[data-scroll]{
+  transition: all 2s;
+}
+#html-scroll[data-scroll="in"]{
+  width:55%; 
+}
+#html-scroll[data-scroll="out"]{
+  width:1%;
+}
+
+#ass-scroll[data-scroll]{
+  transition: all 2s;
+}
+#ass-scroll[data-scroll="in"]{
+  width:50%; 
+}
+#ass-scroll[data-scroll="out"]{
+  width:1%;
+}
+
+#c-scroll[data-scroll]{
+  transition: all 2s;
+}
+#c-scroll[data-scroll="in"]{
+  width:70%; 
+}
+#c-scroll[data-scroll="out"]{
+  width:1%;
+}
+
+#java-scroll[data-scroll]{
+  transition: all 2s;
+}
+#java-scroll[data-scroll="in"]{
+  width:70%; 
+}
+#java-scroll[data-scroll="out"]{
+  width:1%;
+}
+
+#python-scroll[data-scroll]{
+  transition: all 2s;
+}
+#python-scroll[data-scroll="in"]{
+  width:80%; 
+}
+#python-scroll[data-scroll="out"]{
+  width:1%;
+}
+
+#cnet-scroll[data-scroll]{
+  transition: all 2s;
+}
+#cnet-scroll[data-scroll="in"]{
+  width:90%; 
+}
+#cnet-scroll[data-scroll="out"]{
+  width:1%;
+}
+

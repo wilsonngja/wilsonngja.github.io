@@ -4,6 +4,7 @@
         <meta charset = "utf-8">
         <meta name = "viewport" content="width=device-width , initial-state=1">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/animate.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,35 +38,36 @@
               }
             }
         </script> 
-
+        
 
     </head>
 
     <body onload = "typeWriter()">
+
+        <!--Navigation Bar-->
         <header>
             <nav class="navbar navbar-expand-sm justify-content-center">
                 <ul class= "navbar-nav ">
-                    <li class="nav-item"><a class = "nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="#titlepage">Home</a></li>
                     <li class="nav-item"><a class = "nav-link" href="#">About Me</a></li>
                     <li class="nav-item"><a class = "nav-link" href="#">Projects</a></li>
                     <li class="nav-item"><a class = "nav-link" href="#">Achievements</a></li>
                 </ul>
             </nav>
         </header>
-        <!--Navigation Bar-->
         
-
+        
+        <!--Title Page-->
         <section id="titlepage">
-            <div class= "col-md-12 bg">
-                
-                <div class = "row align-items-center">
+            <div class= "col-md-12 bg">    
+                <div class = "row ">
                     <div class = "col-md-12 my-auto">
                         <h1 class = "name1" id = "name1" ></h1>
                     </div>
                 </div>
                 <div class = "row ">
                     <div class = "col-md-12">
-                        <h1 class = "name2 hvr-pulse-grow" id = "name2"></h1>
+                        <h1 class = "name2" id = "name2"></h1>
                     </div>
                 </div>
                 <div class = "row justify-content-center">
@@ -74,12 +76,58 @@
                         <a href= "https://www.instagram.com/wilsonngja/" target="_blank"><img src= "img/instagram.png"></a>
                         <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank"><img src= "img/linkedin_logo.png"></a>
                     </div>
-                    
                 </div>
             </div>
-            
         </section>
 
 
+
+        <section id="aboutmepage">
+            <div class = "row">
+                <img src="img/img_avatar3_1.jpg">
+                <div class = "col-md-8 text-left">
+                    <h1 id="aboutme" class="box_1">>About Me<span class = "animated infinite fadeIn">_</span></h1>
+                    <p>My passion lies in programming but unlike just any programming, I find more joy in programming that resolves prevalent issues rather than just for commercial purposes. Examples are such as programs that can protect personal data. Apart from programming, I also love to play sports such as Table Tennis and Tchoukball.<br></p>
+                    <p>I've committed in projects and one of which is a Data Visualisation project which I've done with CSIT. This projects has helped me to pick up knowledge out of my course such as Web Scraping and Data Cleaning.<br></p>
+                    <p>Currently serving my national service as a Transport Operator (Service) in the Air force, I make use of my weekend to keep up with the digital trends and technology to better prepare me for my university.</p>
+                </div>
+            </div>
+            <h1>>My Skills<span class = "animated infinite fadeIn">_</span></h1> 
+            <div class = "pb">
+                <p>HTML/CSS</p>
+                <div class = "progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "html-scroll" data-scroll></div>
+                </div>
+                <p>Assembly Language</p>
+                <div class = "progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "ass-scroll" data-scroll></div>
+                </div>
+                <p>C/C++</p>
+                <div class = "progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "c-scroll" data-scroll></div>
+                </div>
+                <p>Java</p>
+                <div class = "progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "java-scroll" data-scroll></div>
+                </div>
+                <p>Python</p>
+                <div class = "progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "python-scroll" data-scroll></div>
+                </div>
+                <p>Computer Networking</p>
+                <div class = "progress">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "cnet-scroll" data-scroll></div>
+                </div>
+            </div>
+            
+
+        </section>
+
+        <!--Script for ScrollOut-->
+        <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+        <script>
+            ScrollOut();
+        </script>
     </body>
 </html>
