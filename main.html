@@ -3,18 +3,47 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content="width=device-width , initial-state=1">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <title>Wilson Ng Jing An</title>
+
+
+
+        <script>
+            var i = 0;
+            var j = 0;
+            var val = 0;
+            var txt = 'HELLO! MY NAME IS';
+            var txt2 = 'WILSON NG';
+            var speed = 100;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("name1").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+              if (i== txt.length) val = 1;
+              if (val ==1){
+                if (j < txt2.length) {
+                    document.getElementById("name2").innerHTML += txt2.charAt(j);
+                    j++;
+                    setTimeout(typeWriter, speed);
+              }
+              }
+            }
+        </script> 
+
+
     </head>
 
-    <body>
+    <body onload = "typeWriter()">
         <header>
-            <nav class="navbar navbar-expand-sm fixed-top justify-content-center">
+            <nav class="navbar navbar-expand-sm justify-content-center">
                 <ul class= "navbar-nav ">
                     <li class="nav-item"><a class = "nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class = "nav-link" href="#">About Me</a></li>
@@ -27,7 +56,28 @@
         
 
         <section id="titlepage">
-            <div class= "bg"></div>
+            <div class= "col-md-12 bg">
+                
+                <div class = "row align-items-center">
+                    <div class = "col-md-12 my-auto">
+                        <h1 class = "name1" id = "name1" ></h1>
+                    </div>
+                </div>
+                <div class = "row ">
+                    <div class = "col-md-12">
+                        <h1 class = "name2 hvr-pulse-grow" id = "name2"></h1>
+                    </div>
+                </div>
+                <div class = "row justify-content-center">
+                    <div class = "col-md-12 text-center">
+                        <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank"><img src= "img/facebook.png"></a>
+                        <a href= "https://www.instagram.com/wilsonngja/" target="_blank"><img src= "img/instagram.png"></a>
+                        <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank"><img src= "img/linkedin_logo.png"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            
         </section>
 
 
