@@ -1,33 +1,23 @@
-
-
 body{
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  line-height:1.5;
   padding:0;
   margin:0;
   background-color: #f4f4f4;
-  list-style:none;
 }
 
 /*Navbar*/
-
-
 .navbar{
   justify-content: center;
   background-color: #252525;
   border-bottom:#ffff4d 5px solid;
- 
-  
+
 }
 /*Content in Navbar*/
 .nav-link{
   color: #6666ff;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.5rem;
-  margin-left: 4vw;
-  
+  padding: 0 0 0 0;
 }
 
 .nav-link:hover{
@@ -37,7 +27,7 @@ body{
 .bg{
   background-image: url("../img/background.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 1000px;
   width: 100%;
 }
 
@@ -60,8 +50,8 @@ body{
 }
 
 #titlepage img{
-  width: 3vw;
-  height: 3vw;
+  width: 4.5vw;
+  height: 5vw;
   float:middle;
   margin-left: 3vw;
   margin-right: 3vw;
@@ -70,13 +60,14 @@ body{
 
 #aboutmepage{
   background: #202020;
-  height: 115vh;
+  height: 150vh;
   width:100%;
   border-bottom: 3px solid #ffff4d;
 }
 
 #aboutmepage .row{
   width:100%;
+
 }
 #aboutmepage img{
   padding-top: 5vh;
@@ -96,10 +87,11 @@ body{
 }
 
 #aboutmepage p{
-  font-size:1.25vw;
+  font-size:25px;
   color:#FFFFFF;
   padding-left: 2vw;
 }
+
 
 .progress{
   margin-left: 10%;
@@ -114,6 +106,11 @@ body{
   box-shadow: 0 0 30px #ffff4d;
 }
 
+.progress-bar span{
+  color: #202020;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
 #html-scroll[data-scroll]{
   transition: all 2s;
 }
@@ -174,3 +171,276 @@ body{
   width:1%;
 }
 
+
+#projects{
+  background: #202020;
+  height: 250vh;
+  width: 100%;
+}
+
+#projects h1{
+  color:#4682b4;
+  font-size: 8vw;
+  padding-top:5vh;
+  padding-left: 2vw;
+  padding-bottom: 25px;
+  text-shadow: 0 0 10px #69bdd2;
+}
+
+
+
+/*Responsive Mobile*/
+@media (max-width:980px){
+  .bg{
+      height: 1350px;
+  }
+  #titlepage h1{
+      margin: 0 0 0 0;
+  }
+  .name1{
+      font-size:8.5vw;
+  }
+
+  .name2{
+      font-size: 12vw;
+  }
+
+  #aboutmepage {
+      height: 1600px;
+  }
+
+  #aboutmepage div div p{
+      margin-left:0;
+      margin-right:0;
+      font-size: 2.25vw;
+  }
+
+  #aboutmepage h1{
+      font-size: 5vw;
+      text-align: left;
+      width:100%;
+  }
+
+  #aboutmepage div img{
+      margin-top:20px;
+  }
+
+  #aboutmepage .pb p{
+      font-size:3vw;
+      justify-content: center;
+  }
+
+  #aboutmepage .pb div div span{
+      font-size: 2.5vw;
+      font-weight: bold;
+  }
+  .progress{
+      margin: 0 10% 0 10%;
+  }
+  .progress-bar {
+      text-align: center;
+  }
+
+  #projects{
+      height: 580vh;
+
+  }
+  
+} 
+
+
+@media (max-width: 768px){
+  .nav-link{
+      font-size:2vw;
+  }
+  .bg{
+      height:175vh;
+  }
+  .name1{
+      font-size:7vw;
+  }
+
+  .name2{
+      font-size: 10vw;
+  }
+
+  #titlepage h1{
+      margin: 0 0 0 0;
+  }
+
+  #aboutmepage img{
+      padding-top:20vh;
+  }
+  #aboutmepage {
+      height:425vh;
+  }
+  #aboutmepage h1{
+      font-size: 8vw;
+      text-align: center;
+  }
+
+  #aboutmepage div div p{
+      font-size: 2vw;
+      text-align: center;
+  }
+
+  #aboutmepage .pb p{
+      font-size:3vw;
+      justify-content: center;
+  }
+
+  #aboutmepage .pb div div span{
+      font-size: 2.5vw;
+      font-weight: bold;
+  }
+  .progress{
+      margin: 0 10% 0 10%;
+  }
+  .progress-bar {
+      text-align: center;
+  }
+
+  #projects h1{
+      text-align: center;
+  }
+
+  #projects {
+      height: 550vh;
+  }
+
+}
+
+
+@media (max-width: 650px){
+
+  .name1{
+      font-size:7vw;
+  }
+
+  .name2{
+      font-size: 10vw;
+  }
+  .nav-link{
+      font-size:4vw;
+  }
+  .bg{
+      height: 600px;
+  }
+  #titlepage h1{
+      margin: 0 0 0 0;
+  }
+
+  #aboutmepage {
+      height: 500vh;
+  }
+  #aboutmepage h1{
+      font-size: 7vw;
+      text-align: center;
+  }
+
+  #aboutmepage div div p{
+      font-size: 3.5vw;
+      text-align: center;
+  }
+  #aboutmepage .pb p{
+      font-size:2.5vw;
+      justify-content: center;
+  }
+
+  #aboutmepage .pb div div span{
+      font-size: 2.5vw;
+      font-weight: bold;
+  }
+  .progress{
+      margin: 0 10% 0 10%;
+  }
+  .progress-bar {
+      text-align: center;
+  }
+
+  #projects h1{
+      font-size: 7vw;
+      text-align: center;
+  }
+  
+  #projects{
+      height:550vh;
+  }
+}
+
+
+
+@media (max-width:375px){
+  .bg{
+      height: 800px;
+  }
+  #titlepage h1{
+      margin: 0 0 0 0;
+  }
+
+  #aboutmepage {
+      height: 210vh;
+  }
+
+
+  #aboutmepage .row {
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
+  }
+  #aboutmepage h1{
+      font-size: 10vw;
+      text-align: center;
+  }
+
+  #aboutmepage div div p{
+      font-size: 3.5vw;
+      text-align: center;
+  }
+
+
+  #aboutmepage .pb p{
+      font-size:4vw;
+      justify-content: center;
+  }
+
+  
+  #aboutmepage .pb div div span{
+      font-size: 2.5vw;
+      font-weight: bold;
+  }
+
+  #projects{
+      height: 450vh;
+  }
+  .progress{
+      margin: 0 10% 0 10%;
+  }
+  .proj-box{
+      width: 20px;
+  }
+  .proj-box img {
+      width: 20vw;
+  }
+
+  
+}
+
+
+
+
+.proj-box{
+  width:100%;
+  box-shadow: 0 0 15px #69bdd2 ;
+}
+
+.proj-box img{
+  width: 5vw;
+  height: 5vw;
+  margin-left: auto;
+  
+}
+.flex-container{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

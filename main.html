@@ -4,7 +4,7 @@
         <meta charset = "utf-8">
         <meta name = "viewport" content="width=device-width , initial-state=1">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="./css/animate.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -46,12 +46,12 @@
 
         <!--Navigation Bar-->
         <header>
-            <nav class="navbar navbar-expand-sm justify-content-center">
-                <ul class= "navbar-nav ">
-                    <li class="nav-item"><a class = "nav-link" href="#titlepage">Home</a></li>
-                    <li class="nav-item"><a class = "nav-link" href="#">About Me</a></li>
-                    <li class="nav-item"><a class = "nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class = "nav-link" href="#">Achievements</a></li>
+            <nav class="navbar navbar-expand-md justify-content-center">
+                <ul class= "navbar-nav justify-content-center">
+                    <li class="col-md-4 nav-item"><a class = "nav-link " href="#titlepage">Home</a></li>
+                    <li class="col-md-4 nav-item"><a class = "nav-link " href="#">About Me</a></li>
+                    <li class="col-md-4 nav-item"><a class = "nav-link " href="#">Projects</a></li>
+                    <li class="col-md-4 nav-item"><a class = "nav-link " href="#">Achievements</a></li>
                 </ul>
             </nav>
         </header>
@@ -61,31 +61,31 @@
         <section id="titlepage">
             <div class= "col-md-12 bg">    
                 <div class = "row ">
-                    <div class = "col-md-12 my-auto">
-                        <h1 class = "name1" id = "name1" ></h1>
+                    <div class = "col-md-12 col-12 my-auto">
+                        <h1 class = "name1 col-12" id = "name1" ></h1>
                     </div>
                 </div>
                 <div class = "row ">
-                    <div class = "col-md-12">
+                    <div class = "col-md-12 col-12">
                         <h1 class = "name2" id = "name2"></h1>
                     </div>
                 </div>
                 <div class = "row justify-content-center">
-                    <div class = "col-md-12 text-center">
-                        <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank"><img src= "img/facebook.png"></a>
-                        <a href= "https://www.instagram.com/wilsonngja/" target="_blank"><img src= "img/instagram.png"></a>
-                        <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank"><img src= "img/linkedin_logo.png"></a>
+                    <div>
+                        <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank" class = "col-md-2 col-2"><img src= "img/facebook.png"></a>
+                        <a href= "https://www.instagram.com/wilsonngja/" target="_blank" class = "col-md-2 col-2"><img src= "img/instagram.png"></a>
+                        <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank" class = "col-md-2 col-2"><img src= "img/linkedin_logo.png"></a>
                     </div>
                 </div>
             </div>
         </section>
 
 
-
+        <!--About Me Page-->
         <section id="aboutmepage">
             <div class = "row">
-                <img src="img/img_avatar3_1.jpg">
-                <div class = "col-md-8 text-left">
+                <img class = "col-md-4 col-12 mx-auto d-block" src="img/img_avatar3_1.jpg">
+                <div class = "col-md-8 col-12 text-left">
                     <h1 id="aboutme" class="box_1">>About Me<span class = "animated infinite fadeIn">_</span></h1>
                     <p>My passion lies in programming but unlike just any programming, I find more joy in programming that resolves prevalent issues rather than just for commercial purposes. Examples are such as programs that can protect personal data. Apart from programming, I also love to play sports such as Table Tennis and Tchoukball.<br></p>
                     <p>I've committed in projects and one of which is a Data Visualisation project which I've done with CSIT. This projects has helped me to pick up knowledge out of my course such as Web Scraping and Data Cleaning.<br></p>
@@ -96,33 +96,71 @@
             <div class = "pb">
                 <p>HTML/CSS</p>
                 <div class = "progress">
-                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "html-scroll" data-scroll></div>
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "html-scroll" data-scroll ><span>55%</span></div>
                 </div>
                 <p>Assembly Language</p>
                 <div class = "progress">
-                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "ass-scroll" data-scroll></div>
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "ass-scroll" data-scroll><span>50%</span></div>
                 </div>
                 <p>C/C++</p>
                 <div class = "progress">
-                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "c-scroll" data-scroll></div>
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "c-scroll" data-scroll><span>70%</span></div>
                 </div>
                 <p>Java</p>
                 <div class = "progress">
-                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "java-scroll" data-scroll></div>
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "java-scroll" data-scroll><span>70%</span></div>
                 </div>
                 <p>Python</p>
                 <div class = "progress">
-                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "python-scroll" data-scroll></div>
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "python-scroll" data-scroll><span>80%</span></div>
                 </div>
                 <p>Computer Networking</p>
                 <div class = "progress">
-                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "cnet-scroll" data-scroll></div>
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "cnet-scroll" data-scroll><span>90%</span></div>
                 </div>
             </div>
             
 
         </section>
 
+        <!--Project Page-->
+        <section id="projects">
+            <h1>>My Projects<span class = "animated infinite fadeIn">_</span></h1>
+            <div class = "flex-container">
+                <div class = "proj-box bg-info border border-info m-5 text-center">
+                    <img src = "img/visualisation.png" class = "rounded mx-auto d-block" >
+                    <h3 class = "text-light text-center">Data Visualisation</h3>
+                    <p class="text-light">Data Visualisation is a project done during my 3-months internship with Centre for Strategic Infocomm Technologies (CSIT). This project required HTML and Python prerequisite. Web scraping and data cleaning were conducted before data is being visualisation on a correlation graph with node representations. </p>
+                </div>
+                <div class = "proj-box bg-info border border-info m-5 text-center">
+                    <img src = "img/motion.png" class = "rounded mx-auto d-block">
+                    <h3 class = "text-light text-center">Deep Learning for Human Motion Detection</h3>
+                    <p class="text-light">This project is done in group as my final year project in SP which involves detecting human motion on Personal Mobility Devices (PMD). The inspiration was from the increasing trend of PMDs accidents in Singapore. YOLOv3 Framework is used for detection with images trained from scratch. My team also used Shi-Tomashi Corner Detection algorithm to identify edges to calculate speed of pedesterian on PMDs.</p>
+                </div>
+                <div class = "proj-box bg-info border border-info m-5 text-center">
+                    <img src = "img/microprocessor.png" class = "rounded mx-auto d-block">
+                    <h3 class = "text-light text-center">Smart Washing Machine</h3>
+                    <p class="text-light">Smart Washing Machine System is an integrated project done by the whole class. The class are splitted into groups and assigned different washing machine components to program in C Language. My team were tasked to program a Stepper motor to simulate washing motion. At the end, the whole class integrated the task and demostrated to our lecturer. </p>
+                </div>
+                <div class = "proj-box bg-info border border-info m-5 text-center">
+                    <img src = "img/text.png" class = "rounded mx-auto d-block">
+                    <h2 class = "text-light text-center">Keywords Identifier</h2>
+                    <div class="text-light ">This is a side project that I programmed as a hobby in Python language. By making use to Natural Language Toolkit (NLTK) library to identify the keywords. Filtering is then carried out to remove stopwords and other unwanted data such as '\t' and '\n'. After the cleaning is done, keywords is highlighted by using 'Document' Library available.</div>
+                </div>
+                <div class = "proj-box bg-info border border-info m-5 text-center">
+                    <img src = "img/encryption.png" class = "rounded mx-auto d-block">
+                    <h3 class = "text-light text-center">Substitution Cipher</h3>
+                    <p class="text-light">Substitution Cipher is a project assigned during my Data Structure and Algorithm (DSA) class. The deliverables are to conduct encryption and decryption from a source file. Encryption is done by changing each alphabet of a text and adding a random assigned alphabets for every few alphabets. My team and I also added features by allowing user to encrypt from user input.</p>
+                </div>
+                <div class = "proj-box bg-info border border-info m-5 text-center">
+                    <img src = "img/home.png" class = "rounded mx-auto d-block">
+                    <h3 class = "text-light text-center">Smart Home GUI</h3>
+                    <p class="text-light">Smart Home GUI was done as a project in my Object Oriented Programming (OOP) module. During this module, we programmed a simulation of a Graphical User Interface (GUI). Within my GUI, I made use of images, button and slider to create an interface which allows user to toggle home appliances. The coding was done in Java Language.</p>
+                </div>
+
+            </div>
+            
+        </section>
         <!--Script for ScrollOut-->
         <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
