@@ -60,7 +60,6 @@ body{
 
 #aboutmepage{
   background: #202020;
-  height: 150vh;
   width:100%;
   border-bottom: 3px solid #ffff4d;
 }
@@ -102,9 +101,14 @@ body{
   margin-left: 8.5%;
   padding-top: 1vh;
 }
+
+.pb{
+  margin-bottom: 10%;
+}
 .progress {
   box-shadow: 0 0 30px #ffff4d;
 }
+
 
 .progress-bar span{
   color: #202020;
@@ -188,263 +192,6 @@ body{
 }
 
 
-
-/*Responsive Mobile*/
-@media (max-width:980px){
-  .bg{
-      height: 1350px;
-  }
-  #titlepage h1{
-      margin: 0 0 0 0;
-  }
-  .name1{
-      font-size:8.5vw;
-  }
-
-  .name2{
-      font-size: 12vw;
-  }
-
-  #aboutmepage {
-      height: 1600px;
-  }
-
-  #aboutmepage div div p{
-      margin-left:0;
-      margin-right:0;
-      font-size: 2.25vw;
-  }
-
-  #aboutmepage h1{
-      font-size: 5vw;
-      text-align: left;
-      width:100%;
-  }
-
-  #aboutmepage div img{
-      margin-top:20px;
-  }
-
-  #aboutmepage .pb p{
-      font-size:3vw;
-      justify-content: center;
-  }
-
-  #aboutmepage .pb div div span{
-      font-size: 2.5vw;
-      font-weight: bold;
-  }
-  .progress{
-      margin: 0 10% 0 10%;
-  }
-  .progress-bar {
-      text-align: center;
-  }
-
-  #projects{
-      height: 580vh;
-
-  }
-  
-} 
-
-
-@media (max-width: 768px){
-  .nav-link{
-      font-size:2vw;
-  }
-  .bg{
-      height:175vh;
-  }
-  .name1{
-      font-size:7vw;
-  }
-
-  .name2{
-      font-size: 10vw;
-  }
-
-  #titlepage h1{
-      margin: 0 0 0 0;
-  }
-
-  #aboutmepage img{
-      padding-top:20vh;
-  }
-  #aboutmepage {
-      height:425vh;
-  }
-  #aboutmepage h1{
-      font-size: 8vw;
-      text-align: center;
-  }
-
-  #aboutmepage div div p{
-      font-size: 2vw;
-      text-align: center;
-  }
-
-  #aboutmepage .pb p{
-      font-size:3vw;
-      justify-content: center;
-  }
-
-  #aboutmepage .pb div div span{
-      font-size: 2.5vw;
-      font-weight: bold;
-  }
-  .progress{
-      margin: 0 10% 0 10%;
-  }
-  .progress-bar {
-      text-align: center;
-  }
-
-  #projects h1{
-      text-align: center;
-  }
-
-  #projects {
-      height: 550vh;
-  }
-
-}
-
-
-@media (max-width: 650px){
-
-  .name1{
-      font-size:7vw;
-  }
-
-  .name2{
-      font-size: 10vw;
-  }
-  .nav-link{
-      font-size:4vw;
-  }
-  .bg{
-      height: 600px;
-  }
-  #titlepage h1{
-      margin: 0 0 0 0;
-  }
-
-  #aboutmepage {
-      height: 500vh;
-  }
-  #aboutmepage h1{
-      font-size: 7vw;
-      text-align: center;
-  }
-
-  #aboutmepage div div p{
-      font-size: 3.5vw;
-      text-align: center;
-  }
-  #aboutmepage .pb p{
-      font-size:2.5vw;
-      justify-content: center;
-  }
-
-  #aboutmepage .pb div div span{
-      font-size: 2.5vw;
-      font-weight: bold;
-  }
-  .progress{
-      margin: 0 10% 0 10%;
-  }
-  .progress-bar {
-      text-align: center;
-  }
-
-  #projects h1{
-      font-size: 7vw;
-      text-align: center;
-  }
-  
-  #projects{
-      height:550vh;
-  }
-}
-
-
-
-@media (max-width:375px){
-  
-  .bg{
-      height: 800px;
-  }
-  #titlepage h1{
-      margin: 0 0 0 0;
-  }
-
-  #aboutmepage {
-      height: 210vh;
-  }
-
-
-  #aboutmepage .row {
-      padding: 0 0 0 0;
-      margin: 0 0 0 0;
-  }
-  #aboutmepage h1{
-      font-size: 10vw;
-      text-align: center;
-  }
-
-  #aboutmepage div div p{
-      font-size: 3.5vw;
-      text-align: center;
-  }
-
-
-  #aboutmepage .pb p{
-      font-size:4vw;
-      justify-content: center;
-  }
-
-  
-  #aboutmepage .pb div div span{
-      font-size: 2.5vw;
-      font-weight: bold;
-  }
-
-  #projects{
-      height: 450vh;
-  }
-  .progress{
-      margin: 0 10% 0 10%;
-  }
-  .proj-box{
-      width: 20px;
-  }
-  .proj-box img {
-      width: 20vw;
-  }
-
-  
-}
-
-
-
-
-.proj-box{
-  width:100%;
-  box-shadow: 0 0 15px #69bdd2 ;
-}
-
-.proj-box img{
-  width: 5vw;
-  height: 5vw;
-  margin-left: auto;
-  
-}
-.flex-container{
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
 
 
 .card-body img{
