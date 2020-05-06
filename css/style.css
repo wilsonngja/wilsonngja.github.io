@@ -444,3 +444,9 @@ body{
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+
+.card-body img{
+  width: 10rem;
+  height: auto;
+}
