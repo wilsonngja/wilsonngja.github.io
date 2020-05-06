@@ -189,8 +189,7 @@ body{
   text-shadow: 0 0 10px #14626C;
 }
 
-
-.card{
+#projects .card{
   box-shadow: 0 0 30px #14626C;
 }
 
@@ -200,11 +199,34 @@ body{
 }
 
 
+#achievements{
+  background: #202020;
+  width: 100%;
+}
+#achievements h1{
+  color: #FFD300;
+  font-size: 5vw;
+  padding-top: 5vh;
+  padding-left: 2vw;
+  padding-bottom: 5vh;
+  text-shadow: 0 0 10px #ffd300;
+}
+
+#achievements .card{
+  box-shadow: 0 0 30px #FFD300;
+}
+
+#achievements .card-title{
+  text-shadow: 0 0 10px #FFFFFF;
+  
+}
 
 
 
-
-
+footer{
+  background-color: #252525;
+  border-top: 5px solid #ffd300;
+}
 
 
 
@@ -239,8 +261,20 @@ body{
   }
 
   #projects h1{
-      text-align: center;
+      font-size: 5vw;
   }
+
+  #achievements h1{
+      font-size: 5vw;
+      text-align: center;
+      padding-right:5%;
+      padding-left:5%;
+  }
+
+  #achievements div{
+      margin-left:0;
+  }
+
 }
 
 @media (max-width: 1536px){
@@ -261,6 +295,7 @@ body{
 
   #projects h1{
       text-align: center;
+      font-size: 5vw;
   }
 
   .aboutmeparagraph p{
@@ -271,6 +306,17 @@ body{
 
   .pb p{
       margin-left: 10%;
+  }
+
+  #achievements h1{
+      font-size: 5vw;
+      text-align: center;
+      padding-right:5%;
+      padding-left:5%;
+  }
+
+  #achievements div{
+      margin-left:0;
   }
 
 }
@@ -304,6 +350,17 @@ body{
   .aboutmeparagraph p{
       margin-left: 2.5%;
       text-align: center;
+  }
+
+  #achievements h1{
+      font-size: 8vw;
+      text-align: center;
+      padding-right:5%;
+      padding-left:5%;
+  }
+
+  #achievements div{
+      margin-left:0;
   }
 }
 
@@ -340,6 +397,17 @@ body{
   #projects h1{
       text-align: center;
   }
+
+  #achievements h1{
+      font-size: 8vw;
+      text-align: center;
+      padding-right:5%;
+      padding-left:5%;
+  }
+
+  #achievements div{
+      margin-left:0;
+  }
 }
 
 @media (max-width: 650px){
@@ -370,6 +438,17 @@ body{
   }
   #projects h1{
       text-align: center;
+  }
+
+  #achievements h1{
+      font-size: 8vw;
+      text-align: center;
+      padding-right:5%;
+      padding-left:5%;
+  }
+
+  #achievements div{
+      margin-left:0;
   }
 }
 
@@ -422,5 +501,16 @@ body{
 
   #projects h1{
       text-align: center;
+  }
+
+  #achievements h1{
+      font-size: 8vw;
+      text-align: center;
+      padding-right:5%;
+      padding-left:5%;
+  }
+
+  #achievements div{
+      margin-left:0;
   }
 }
