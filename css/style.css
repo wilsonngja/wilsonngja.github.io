@@ -85,12 +85,10 @@ body{
   text-shadow: 0 0 10px #6666ff;
 }
 
-#aboutmepage p{
-  font-size:25px;
-  color:#FFFFFF;
-  padding-left: 2vw;
-}
 
+.aboutmeparagraph{
+  color: #FFFFFF;
+}
 
 .progress{
   margin-left: 10%;
@@ -104,6 +102,7 @@ body{
 
 .pb{
   margin-bottom: 10%;
+  color: #FFFFFF;
 }
 .progress {
   box-shadow: 0 0 30px #ffff4d;
@@ -178,23 +177,250 @@ body{
 
 #projects{
   background: #202020;
-  height: 250vh;
   width: 100%;
 }
 
 #projects h1{
-  color:#4682b4;
+  color:#57A0D3;
   font-size: 8vw;
   padding-top:5vh;
   padding-left: 2vw;
   padding-bottom: 25px;
-  text-shadow: 0 0 10px #69bdd2;
+  text-shadow: 0 0 10px #14626C;
+}
+
+
+.card{
+  box-shadow: 0 0 30px #14626C;
+}
+
+.card-body img{
+  width: 10rem;
+  height: auto;
 }
 
 
 
 
-.card-body img{
-  width: 10rem;
-  height: auto;
+
+
+
+
+
+
+@media (min-width: 1920px){
+  .nav-link{
+      font-size: 1.5vw;
+  }
+  .name1{
+      font-size: 8vw;
+  }
+  .name2{
+      font-size: 12vw;
+  }
+
+  #aboutmepage img{
+      margin-top:50px;
+  }
+
+  #aboutmepage h1{
+      font-size: 5vw;
+      text-align: center;
+  }
+
+  .aboutmeparagraph p{
+      font-size: 1.75vw;
+      margin-left: 5%;
+      text-align: center;
+  }
+
+  .pb p{
+      margin-left: 10%;
+  }
+
+  #projects h1{
+      text-align: center;
+  }
+}
+
+@media (max-width: 1536px){
+
+  .nav-link{
+      font-size:1.5vw;
+  }
+  .name1{
+      font-size:8vw;
+  }
+  .name2{
+      font-size: 12vw;
+  }
+  
+  #aboutmepage h1{
+      font-size: 5vw;
+  }
+
+  #projects h1{
+      text-align: center;
+  }
+
+  .aboutmeparagraph p{
+      margin-left: 5%;
+      font-size: 1.5vw;
+      text-align: center;
+  }
+
+  .pb p{
+      margin-left: 10%;
+  }
+
+}
+
+@media (max-width: 950px){
+
+  .nav-link{
+      font-size:2vw;
+  }
+  .name1{
+      font-size:8vw;
+  }
+
+  .name2{
+      font-size: 12vw;
+  }
+
+  #aboutmepage h1{
+      font-size: 8vw;
+      text-align: center;
+  }
+
+  #aboutmepage img{
+      margin-top: 100px;
+  }
+
+  #projects h1{
+      text-align: center;
+  }
+
+  .aboutmeparagraph p{
+      margin-left: 2.5%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+
+  .nav-link{
+      font-size:2vw;
+  }
+  .name1{
+      font-size:8vw;
+  }
+
+  .name2{
+      font-size: 12vw;
+  }
+
+  #aboutmepage h1{
+      font-size: 8vw;
+      text-align: center;
+  }
+  #aboutmepage img{
+      margin-top: 50px;
+      margin-left: 2.5%;
+  }
+
+  .aboutmeparagraph{
+      text-align: center;
+  }
+
+  .aboutmeparagraph p{
+      font-size: 1.75vw;
+  }
+
+  #projects h1{
+      text-align: center;
+  }
+}
+
+@media (max-width: 650px){
+  .name1{
+      font-size:8vw;
+  }
+
+  .name2{
+      font-size: 12vw;
+  }
+  #aboutmepage img{
+      width:10%;
+  }
+  #aboutmepage h1{
+      text-align: center;
+      font-size: 8vw;
+  }
+
+  .aboutmeparagraph{
+      text-align: center;
+  }
+
+  .aboutmeparagraph p{
+      text-align: center;
+      font-size:3vw;
+      colour: #FFFFFF;
+      margin-left: 5%;;
+  }
+  #projects h1{
+      text-align: center;
+  }
+}
+
+@media (max-width: 375px){
+
+  .name1{
+      font-size: 8vw;
+  }
+
+  .name2{
+      font-size: 12vw;
+  }
+
+  #titlepage img{
+      width: 20px;
+      height: 20px;
+  }
+  #aboutmepage h1{
+      text-align: center;
+      font-size: 12.5vw;
+  }
+  #aboutmepage img{
+      justify-content: center;
+      padding-right: 0;
+      width:100%;
+  }
+  .aboutmeparagraph{
+      justify-content: center;
+  }
+  .aboutmeparagraph p{
+      justify-content: center;
+      text-align: center;
+      font-size: 4vw;
+      color: #FFFFFF;
+      margin-left:5%;
+  }
+
+  .pb p{
+      font-size: 10px;
+      margin: 0 0 0 10;
+  }
+  
+  .progress-bar span{
+      font-size: 10px;
+  }
+
+  #projects div{
+      margin: 0 0 0 0;
+  }
+
+  #projects h1{
+      text-align: center;
+  }
 }
