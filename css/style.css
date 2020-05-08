@@ -247,7 +247,11 @@ footer{
 
   #aboutmepage h1{
       font-size: 5vw;
-      text-align: center;
+      
+  }
+
+  #aboutme {
+    text-align: center;
   }
 
   .aboutmeparagraph p{
