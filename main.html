@@ -17,9 +17,12 @@
         <script>
             var i = 0;
             var j = 0;
+            var k = 0;
             var val = 0;
-            var txt = 'str my_name=';
-            var txt2 = 'wilson_ng;';
+            var val2 = 0;
+            var txt = 'str ';
+            var txt2 = 'my_name= ';
+            var txt3 = 'wilson_ng;'
             var speed = 100;
             
             function typeWriter() {
@@ -31,9 +34,17 @@
               if (i== txt.length) val = 1;
               if (val ==1){
                 if (j < txt2.length) {
-                    document.getElementById("name1").innerHTML += txt2.charAt(j);
+                    document.getElementById("name2").innerHTML += txt2.charAt(j);
                     j++;
                     setTimeout(typeWriter, speed);
+              }
+              if (j==txt2.length) val2 = 1;
+              if (val2 == 1){
+                if (k < txt3.length) {
+                    document.getElementById("name3").innerHTML += txt3.charAt(k);
+                    k++;
+                    setTimeout(typeWriter, speed);
+                    }
               }
               }
             }
@@ -61,15 +72,17 @@
         <section id="titlepage">
             <div class= "col-md-12 bg">    
                 <div class = "row ">
-                    <div class = "col-md-12 col-12 my-auto">
-                        <h1 class = "name1 col-12" id = "name1" ></h1>
+                    <div class = "col-md-4 col-4 my-auto">
+                        <h1 class = "name1 col-4" id = "name1" ></h1>
                     </div>
-                </div>
-                <div class = "row ">
-                    <div class = "col-md-12 col-12">
+                    <div class = "col-md-4 col-4">
                         <h1 class = "name2" id = "name2"></h1>
                     </div>
+                    <div class = "col-md-4 col-4">
+                        <h1 class = "name3" id = "name3"></h1>
+                    </div>
                 </div>
+                
                 <div class = "row justify-content-center">
                     <div>
                         <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank" class = "col-md-2 col-2"><img src= "img/facebook.png"></a>
