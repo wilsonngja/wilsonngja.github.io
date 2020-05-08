@@ -77,12 +77,12 @@ body{
 }
 
 #aboutmepage h1{
-  color: #6666ff;
+  color: #FC618D;
   font-size: 3.5vw;
   padding-top:5vh;
   padding-left: 2vw;
   padding-bottom: 25px;
-  text-shadow: 0 0 10px #6666ff;
+  text-shadow: 0 0 10px #FC618D;
 }
 
 
@@ -181,12 +181,12 @@ body{
 }
 
 #projects h1{
-  color:#57A0D3;
+  color:#FC618D;
   font-size: 8vw;
   padding-top:5vh;
   padding-left: 2vw;
   padding-bottom: 25px;
-  text-shadow: 0 0 10px #14626C;
+  text-shadow: 0 0 10px #FC618D;
 }
 
 #projects .card{
