@@ -35,7 +35,6 @@ body{
 .name1{
   padding-top:20vh;
   font-size:5vw;
-  padding-bottom: 20vh;
   text-align: center;
   color:#FFFFFF;
 }
@@ -204,16 +203,16 @@ body{
   width: 100%;
 }
 #achievements h1{
-  color: #FFD300;
+  color: #FCE565;
   font-size: 5vw;
   padding-top: 5vh;
   padding-left: 2vw;
   padding-bottom: 5vh;
-  text-shadow: 0 0 10px #ffd300;
+  text-shadow: 0 0 10px #FCE565;
 }
 
 #achievements .card{
-  box-shadow: 0 0 30px #FFD300;
+  box-shadow: 0 0 30px #FCE565;
 }
 
 #achievements .card-title{
@@ -225,7 +224,7 @@ body{
 
 footer{
   background-color: #222222;
-  border-top: 5px solid #ffd300;
+  border-top: 5px solid #FCE565;
 }
 
 
@@ -261,6 +260,10 @@ footer{
 
   #projects h1{
       font-size: 5vw;
+  }
+  
+  #projects {
+    border-bottom: 5px solid #FCE565;
   }
 
   #achievements h1{
