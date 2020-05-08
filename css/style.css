@@ -33,16 +33,18 @@ body{
 
 /*This is the "Hello my name is*/
 .name1, .name2, .name3 {
-  padding-top:20vh;
+  padding-top:40vh;
   font-size:5vw;
-  margin: 0 0 0 0;
+
 
 }
 /*This is the "Wilson Ng"*/
 .name1{
   color: #FC618D;
 }
-
+.name2{
+  color: #FFFFFF;
+}
 .name3{
   color: #7BD890;
 }
@@ -184,6 +186,7 @@ body{
   padding-left: 2vw;
   padding-bottom: 25px;
   text-shadow: 0 0 10px #7BD890;
+  text-align: left;
 }
 
 #projects .card{
@@ -199,6 +202,7 @@ body{
 #achievements{
   background: #222222;
   width: 100%;
+  
 }
 #achievements h1{
   color: #FCE565;
@@ -207,6 +211,7 @@ body{
   padding-left: 2vw;
   padding-bottom: 5vh;
   text-shadow: 0 0 10px #FCE565;
+  text-align: left;
 }
 
 #achievements .card{
@@ -247,7 +252,7 @@ footer{
   .aboutmeparagraph p{
       font-size: 1.75vw;
       margin-left: 5%;
-      text-align: center;
+      text-align: left;
   }
 
   .pb p{
@@ -264,9 +269,7 @@ footer{
 
   #achievements h1{
       font-size: 5vw;
-      text-align: center;
-      padding-right:5%;
-      padding-left:5%;
+      text-align: left;
   }
 
   #achievements div{
@@ -280,12 +283,11 @@ footer{
   .nav-link{
       font-size:1.5vw;
   }
-  .name1{
-      font-size:8vw;
-  }
-  .name2{
-      font-size: 12vw;
-  }
+
+  .name1, .name2, .name3 {
+    font-size: 7vw;
+}
+
   
   #aboutmepage h1{
       font-size: 5vw;
@@ -297,9 +299,9 @@ footer{
   }
 
   .aboutmeparagraph p{
-      margin-left: 5%;
+      margin-left: 2.5%;
       font-size: 1.5vw;
-      text-align: center;
+      text-align: left;
   }
 
   .pb p{
@@ -308,9 +310,7 @@ footer{
 
   #achievements h1{
       font-size: 5vw;
-      text-align: center;
       padding-right:5%;
-      padding-left:5%;
   }
 
   #achievements div{
@@ -324,17 +324,13 @@ footer{
   .nav-link{
       font-size:2vw;
   }
-  .name1{
-      font-size:8vw;
-  }
-
-  .name2{
-      font-size: 12vw;
-  }
+  .name1, .name2, .name3 {
+    font-size: 7vw;
+}
 
   #aboutmepage h1{
       font-size: 8vw;
-      text-align: center;
+      text-align: left;
   }
 
   #aboutmepage img{
@@ -343,18 +339,18 @@ footer{
 
   #projects h1{
       text-align: center;
+      font-size: 8vw;
   }
 
   .aboutmeparagraph p{
       margin-left: 2.5%;
-      text-align: center;
+      text-align: left;
   }
 
   #achievements h1{
       font-size: 8vw;
       text-align: center;
       padding-right:5%;
-      padding-left:5%;
   }
 
   #achievements div{
@@ -367,17 +363,13 @@ footer{
   .nav-link{
       font-size:2vw;
   }
-  .name1{
-      font-size:8vw;
-  }
-
-  .name2{
-      font-size: 12vw;
-  }
+  .name1, .name2, .name3 {
+    font-size: 7vw;
+}
 
   #aboutmepage h1{
       font-size: 8vw;
-      text-align: center;
+      text-align: left;
   }
   #aboutmepage img{
       margin-top: 50px;
@@ -389,18 +381,18 @@ footer{
   }
 
   .aboutmeparagraph p{
-      font-size: 1.75vw;
+      font-size: 1.8vw;
   }
 
   #projects h1{
       text-align: center;
+      font-size: 8vw;
   }
 
   #achievements h1{
       font-size: 8vw;
       text-align: center;
       padding-right:5%;
-      padding-left:5%;
   }
 
   #achievements div{
@@ -409,13 +401,10 @@ footer{
 }
 
 @media (max-width: 650px){
-  .name1{
-      font-size:8vw;
-  }
+  .name1, .name2, .name3 {
+    font-size: 7vw;
+}
 
-  .name2{
-      font-size: 12vw;
-  }
   #aboutmepage img{
       width:10%;
   }
@@ -452,13 +441,9 @@ footer{
 
 @media (max-width: 375px){
 
-  .name1{
-      font-size: 8vw;
-  }
-
-  .name2{
-      font-size: 12vw;
-  }
+  .name1, .name2, .name3 {
+    font-size: 6vw;
+}
 
   #titlepage img{
       width: 20px;
@@ -498,11 +483,12 @@ footer{
   }
 
   #projects h1{
+      font-size: 12.5vw;
       text-align: center;
   }
 
   #achievements h1{
-      font-size: 8vw;
+      font-size: 10vw;
       text-align: center;
       padding-right:5%;
       padding-left:5%;
