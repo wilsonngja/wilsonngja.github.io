@@ -33,9 +33,9 @@ body{
 
 /*This is the "Hello my name is*/
 .name1{
-  padding-top:30vh;
+  padding-top:20vh;
   font-size:5vw;
-  margin-bottom:10px;
+  padding-bottom: 20vh;
   text-align: center;
   color:#FFFFFF;
 }
