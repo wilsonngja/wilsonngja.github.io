@@ -4,7 +4,7 @@
         <meta charset = "utf-8">
         <meta name = "viewport" content="width=device-width , initial-state=1">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="./css/animate.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -50,6 +50,7 @@
             }
         </script> 
         
+        
 
     </head>
 
@@ -85,9 +86,9 @@
                 
                 <div class = "row justify-content-center">
                     <div>
-                        <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank" class = "col-md-2 col-2"><img src= "img/facebook.png"></a>
-                        <a href= "https://www.instagram.com/wilsonngja/" target="_blank" class = "col-md-2 col-2"><img src= "img/instagram.png"></a>
-                        <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank" class = "col-md-2 col-2"><img src= "img/linkedin_logo.png"></a>
+                        <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank" class = "col-md-2 col-2"><img src= "img/facebook.png" class = "wow fadeInLeft" data-wow-duration="2s"></a>
+                        <a href= "https://www.instagram.com/wilsonngja/" target="_blank" class = "col-md-2 col-2 "><img src= "img/instagram.png" class = "wow fadeInUp" data-wow-duration="2s"></a>
+                        <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank" class = "col-md-2 col-2"><img src= "img/linkedin_logo.png" class = "wow fadeInRight" data-wow-duration="2s"></a>
                     </div>
                 </div>
             </div>
@@ -97,8 +98,8 @@
         <!--About Me Page-->
         <section id="aboutmepage" style = "height: 100%;">
             <div class = "row">
-                <img class = "d-md-none col-6 mx-auto d-block" src="img/img_avatar3_1.jpg">
-                <img class = "d-none d-md-block d-lg-block" src = "img/img_avatar3_1_1.jpg">
+                <img class = "d-md-none col-6 mx-auto d-block wow fadeInLeft"  src="img/img_avatar3_1.jpg">
+                <img class = "d-none d-md-block d-lg-block wow fadeInLeft"  src = "img/img_avatar3_1_1.jpg">
                 <div class = "aboutmeparagraph col-md-8 col-12">
                     <h1 id="aboutme" class="box_1">>about_me<span class = "animated infinite fadeIn">_</span></h1>
                     <p>My passion lies in programming but unlike just any programming, I find more joy in programming that resolves prevalent issues rather than just for commercial purposes. Examples are such as programs that can protect personal data. Apart from programming, I also love to play sports such as Table Tennis and Tchoukball.<br></p>
@@ -290,6 +291,12 @@
         <script>
             ScrollOut();
         </script>
+
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
     </body>
 
     <footer>
