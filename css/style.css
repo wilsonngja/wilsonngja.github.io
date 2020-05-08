@@ -32,22 +32,19 @@ body{
 }
 
 /*This is the "Hello my name is*/
-.name1{
+.name1, .name2, .name3 {
   padding-top:20vh;
   font-size:5vw;
-  text-align: center;
-  color:#FFFFFF;
+
 }
 /*This is the "Wilson Ng"*/
-.name2{
-  margin-top: 10px;
-  font-size: 8vw;
-  color:#ffff4d; 
-  margin-bottom: 7px;
-  text-shadow: 0 0 5px #ffffff, 0 0 25px #ffff4d;
-  text-align: center;
+.name1{
+  color: #FC618D;
 }
 
+.name3{
+  color: #7BD890;
+}
 #titlepage img{
   width: 4.5vw;
   height: 5vw;
@@ -233,12 +230,10 @@ footer{
   .nav-link{
       font-size: 1.5vw;
   }
-  .name1{
-      font-size: 8vw;
+  .name1, .name2, .name3 {
+      font-size: 7vw;
   }
-  .name2{
-      font-size: 12vw;
-  }
+
 
   #aboutmepage img{
       margin-top:50px;
