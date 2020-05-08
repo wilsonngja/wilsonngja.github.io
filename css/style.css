@@ -1,5 +1,5 @@
 body{
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Courier Prime', monospace !important;
   padding:0;
   margin:0;
   background-color: #f4f4f4;
