@@ -18,7 +18,8 @@
             var i = 0;
             var j = 0;
             var val = 0;
-            var txt = 'str my_name = wilson_ng; ';
+            var txt = 'str my_name=';
+            var txt2 = 'wilson_ng';
             var speed = 100;
             
             function typeWriter() {
@@ -27,7 +28,14 @@
                 i++;
                 setTimeout(typeWriter, speed);
               }
-              
+              if (i== txt.length) val = 1;
+              if (val ==1){
+                if (j < txt2.length) {
+                    document.getElementById("name2").innerHTML += txt2.charAt(j);
+                    j++;
+                    setTimeout(typeWriter, speed);
+              }
+              }
             }
         </script> 
         
