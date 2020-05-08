@@ -59,7 +59,7 @@ body{
 
 
 #aboutmepage{
-  background: #202020;
+  background: #222222;
   width:100%;
   border-bottom: 3px solid #ffff4d;
 }
@@ -176,7 +176,7 @@ body{
 
 
 #projects{
-  background: #202020;
+  background: #222222;
   width: 100%;
 }
 
@@ -200,7 +200,7 @@ body{
 
 
 #achievements{
-  background: #202020;
+  background: #222222;
   width: 100%;
 }
 #achievements h1{
@@ -224,7 +224,7 @@ body{
 
 
 footer{
-  background-color: #252525;
+  background-color: #222222;
   border-top: 5px solid #ffd300;
 }
 
