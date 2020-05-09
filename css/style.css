@@ -97,6 +97,8 @@ body{
 .pb p{
   margin-left: 8.5%;
   padding-top: 1vh;
+  margin-bottom: 0;
+  color: #FC618D;
 }
 
 .pb{
@@ -104,7 +106,7 @@ body{
   color: #FFFFFF;
 }
 .progress {
-  box-shadow: 0 0 30px #ffff4d;
+  box-shadow: 0 0 20px #ffff4d;
 }
 
 
@@ -190,9 +192,13 @@ body{
 }
 
 #projects .card{
-  box-shadow: 0 0 30px #14626C;
+  background-color: #222222;
+  box-shadow: 0 0 15px #FC618D;
 }
 
+#projects .card-title{
+  color: #FC618D;
+}
 .card-body img{
   width: 10rem;
   height: auto;

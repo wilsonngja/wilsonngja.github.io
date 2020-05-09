@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -73,7 +74,7 @@
         <section id="titlepage">
             <div class= "col-md-12 bg">    
                 <div class = "row justify-content-center">
-                    <h1 class = "name1" id = "name1" ></h1>
+                    <h1 class = "name1" id = "name1"></h1>
                     <h1 class = "name2" id = "name2"></h1>
                     <h1 class = "name3" id = "name3"></h1>
                     
@@ -81,9 +82,9 @@
                 
                 <div class = "row justify-content-center">
                     <div>
-                        <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank" class = "col-md-2 col-2"><img src= "img/facebook.png" class = "wow fadeInLeft" data-wow-duration="2s"></a>
-                        <a href= "https://www.instagram.com/wilsonngja/" target="_blank" class = "col-md-2 col-2 "><img src= "img/instagram.png" class = "wow fadeInUp" data-wow-duration="2s"></a>
-                        <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank" class = "col-md-2 col-2"><img src= "img/linkedin_logo.png" class = "wow fadeInRight" data-wow-duration="2s"></a>
+                        <a href= "https://www.facebook.com/wilson.ng.9619934" target="_blank" class = "col-md-2 col-2"><img src= "img/facebook.png" data-aos="fade-right"></a>
+                        <a href= "https://www.instagram.com/wilsonngja/" target="_blank" class = "col-md-2 col-2 "><img src= "img/instagram.png" data-aos="fade-down"></a>
+                        <a href= "https://www.linkedin.com/in/wilson-ng-jing-an-01323a134/" target="_blank" class = "col-md-2 col-2"><img src= "img/linkedin_logo.png" data-aos="fade-left"></a>
                     </div>
                 </div>
             </div>
@@ -93,17 +94,19 @@
         <!--About Me Page-->
         <section id="aboutmepage" style = "height: 100%;">
             <div class = "row">
-                <img class = "d-md-none col-6 mx-auto d-block wow fadeInLeft"  src="img/img_avatar3_1.jpg">
-                <img class = "d-none d-md-block d-lg-block wow fadeInLeft"  src = "img/img_avatar3_1_1.jpg">
-                <div class = "aboutmeparagraph col-md-8 col-12 wow fadeInRight">
-                    <h1 id="aboutme" class="box_1">>about_me<span class = "animated infinite fadeIn">_</span></h1>
-                    <p>My passion lies in programming but unlike just any programming, I find more joy in programming that resolves prevalent issues rather than just for commercial purposes. Examples are such as programs that can protect personal data. Apart from programming, I also love to play sports such as Table Tennis and Tchoukball.<br></p>
-                    <p>I've committed in projects and one of which is a Data Visualisation project which I've done with CSIT. This projects has helped me to pick up knowledge out of my course such as Web Scraping and Data Cleaning.<br></p>
-                    <p>Currently serving my national service as a Transport Operator (Service) in the Air force, I make use of my weekend to keep up with the digital trends and technology to better prepare me for my university.</p>
+                <img class = "d-md-none col-6 mx-auto d-block "  src="img/img_avatar3_1.jpg" data-aos='fade-down'>
+                <img class = "d-none d-md-block d-lg-block"  src = "img/img_avatar3_1_1.jpg" data-aos='fade-right'>
+                <div class = "aboutmeparagraph col-md-8 col-12">
+                    <h1 id="aboutme" class="box_1" data-aos = "zoom-in">>about_me<span class = "animated infinite fadeIn">_</span></h1>
+                    <div data-aos = "fade-left">
+                        <p>My passion lies in programming but unlike just any programming, I find more joy in programming that resolves prevalent issues rather than just for commercial purposes. Examples are such as programs that can protect personal data. Apart from programming, I also love to play sports such as Table Tennis and Tchoukball.<br></p>
+                        <p>I've committed in projects and one of which is a Data Visualisation project which I've done with CSIT. This projects has helped me to pick up knowledge out of my course such as Web Scraping and Data Cleaning.<br></p>
+                        <p>Currently serving my national service as a Transport Operator (Service) in the Air force, I make use of my weekend to keep up with the digital trends and technology to better prepare me for my university.</p>
+                    </div>
                 </div>
             </div>
-            <h1 class = "wow zoomInDown" data-wow-duration="2s">>my_skills<span class = "animated infinite fadeIn">_</span></h1> 
-            <div class = "pb">
+            <h1 data-aos= "zoom-in">>my_skills<span class = "animated infinite fadeIn">_</span></h1> 
+            <div class = "pb" data-aos="flip-left">
                 <p>HTML/CSS</p>
                 <div class = "progress">
                     <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" id = "html-scroll" data-scroll ><span>55%</span></div>
@@ -135,68 +138,68 @@
 
         <!--Project Page-->
         <section id="projects" style = "height: 100%;" >
-            <h1 class ="wow zoomInDown" data-wow-duration="2s">>my_projects<span class = "animated infinite fadeIn">_</span></h1>
-            <div class = "row justify-content-center " style= "width: 100%;">
+            <h1 data-aos="zoom-in">>my_projects<span class = "animated infinite fadeIn">_</span></h1>
+            <div class = "row justify-content-center " style= "width: 100%;" data-aos="fade-left">
 
                 <!--Item 1-->
-                <div class="card  mx-5 my-5 wow bounceInLeft" style="width: 22.5rem;" data-wow-duration="2s">
+                <div class="card  mx-5 my-5" style="width: 22.5rem;" >
                     <div class="card-body">
                         <img src = "img/csit.png" class = "mx-auto d-block">
                         <br>
-                        <h4 class="card-title text-dark text-center"><strong>Data Visualisation</strong></h5>
-                        <p class="card-text text-dark text-center">Data Visualisation is a project done during my 3-months internship with Centre for Strategic Infocomm Technologies (CSIT). This project required HTML and Python prerequisite. Web scraping and data cleaning were conducted before data is being visualisation on a correlation graph with node representations. </p>
+                        <h4 class="card-title text-center"><strong>Data Visualisation</strong></h5>
+                        <p class="card-text text-light text-center">Data Visualisation is a project done during my 3-months internship with Centre for Strategic Infocomm Technologies (CSIT). This project required HTML and Python prerequisite. Web scraping and data cleaning were conducted before data is being visualisation on a correlation graph with node representations. </p>
                     </div>
                 </div>
 
 
                 <!--Item 2-->
-                <div class="card bg-light mx-5 my-5 wow bounceInLeft" style="width: 22.5rem;" data-wow-duration="2s">
+                <div class="card mx-5 my-5" style="width: 22.5rem;" >
                     <div class="card-body">
                         <img src = "img/motion.png" class = "mx-auto d-block" style= "width:18rem;">
                         <br>
-                        <h4 class="card-title text-dark text-center"><strong>Deep Learning for <br>Human Motion Detection</strong></h5>
-                        <p class="card-text text-dark text-center">This project is done in group as my final year project in SP which involves detecting human motion on Personal Mobility Devices (PMD). The inspiration was from the increasing trend of PMDs accidents in Singapore. YOLOv3 Framework is used for detection with images trained from scratch. My team also used Shi-Tomashi Corner Detection algorithm to identify edges to calculate speed of pedesterian on PMDs.</p>
+                        <h4 class="card-title text-center"><strong>Deep Learning for <br>Human Motion Detection</strong></h5>
+                        <p class="card-text text-light text-center">This project is done in group as my final year project in SP which involves detecting human motion on Personal Mobility Devices (PMD). The inspiration was from the increasing trend of PMDs accidents in Singapore. YOLOv3 Framework is used for detection with images trained from scratch. My team also used Shi-Tomashi Corner Detection algorithm to identify edges to calculate speed of pedesterian on PMDs.</p>
                     </div>
                 </div>
 
 
                 <!--Item 3-->
-                <div class="card bg-light mx-5 my-5 wow bounceInLeft" style="width: 22.5rem;" data-wow-duration="2s">
+                <div class="card mx-5 my-5" style="width: 22.5rem;">
                     <div class="card-body">
                         <img src = "img/microprocessor.png" class = "mx-auto d-block" style= "width:18rem;">
                         <br>
-                        <h4 class="card-title text-dark text-center"><strong>Smart Washing Machine</strong></h5>
-                        <p class="card-text text-dark text-center">Smart Washing Machine System is an integrated project done by the whole class. The class are splitted into groups and assigned different washing machine components to program in C Language. My team were tasked to program a Stepper motor to simulate washing motion. At the end, the whole class integrated the task and demostrated to our lecturer. </p>
+                        <h4 class="card-title text-center"><strong>Smart Washing Machine</strong></h5>
+                        <p class="card-text text-light text-center">Smart Washing Machine System is an integrated project done by the whole class. The class are splitted into groups and assigned different washing machine components to program in C Language. My team were tasked to program a Stepper motor to simulate washing motion. At the end, the whole class integrated the task and demostrated to our lecturer. </p>
                     </div>
                 </div>
             </div>
 
-            <div class = "row justify-content-center" style = "width: 100%;" >
-                <div class = "card bg-light mx-5 my-5 wow bounceInRight" style = "width: 22.5rem;" data-wow-duration="2s">
+            <div class = "row justify-content-center" style = "width: 100%;" data-aos="fade-right" >
+                <div class = "card mx-5 my-5" style = "width: 22.5rem;">
                     <div class = "card-body">
                         <img src = "img/text.png" class = "mx-auto d-block" style = "width:18rem;">
                         <br>
-                        <h4 class = "card-title text-dark text-center"><strong>Keyword Identifier</strong></h5>
-                        <p class = "card-text text-dark text-center">This is a side project that I programmed as a hobby in Python language. By making use to Natural Language Toolkit (NLTK) library to identify the keywords. Filtering is then carried out to remove stopwords and other unwanted data such as '\t' and '\n'. After the cleaning is done, keywords is highlighted by using 'Document' Library available.</p>
+                        <h4 class = "card-title text-center"><strong>Keyword Identifier</strong></h5>
+                        <p class = "card-text text-light text-center">This is a side project that I programmed as a hobby in Python language. By making use to Natural Language Toolkit (NLTK) library to identify the keywords. Filtering is then carried out to remove stopwords and other unwanted data such as '\t' and '\n'. After the cleaning is done, keywords is highlighted by using 'Document' Library available.</p>
                     </div>                    
                 </div>
                 
 
-                <div class = "card bg-light mx-5 my-5 wow bounceInRight" style = "width: 22.5rem;" data-wow-duration="2s">
+                <div class = "card mx-5 my-5" style = "width: 22.5rem;">
                     <div class = "card-body">
                         <img src = "img/encryption.jpeg" class = "mx-auto d-block" style="width:18rem;">
                         <br>
-                        <h4 class = "card-title text-dark text-center"><strong>Substitution Cipher</strong></h5>
-                        <p class = "card-text text-dark text-center">Substitution Cipher is a project assigned during my Data Structure and Algorithm (DSA) class. The deliverables are to conduct encryption and decryption from a source file. Encryption is done by changing each alphabet of a text and adding a random assigned alphabets for every few alphabets. My team and I also added features by allowing user to encrypt from user input.</p>
+                        <h4 class = "card-title text-center"><strong>Substitution Cipher</strong></h5>
+                        <p class = "card-text text-light text-center">Substitution Cipher is a project assigned during my Data Structure and Algorithm (DSA) class. The deliverables are to conduct encryption and decryption from a source file. Encryption is done by changing each alphabet of a text and adding a random assigned alphabets for every few alphabets. My team and I also added features by allowing user to encrypt from user input.</p>
                     </div>
                 </div>
 
-                <div class = "card bg-light mx-5 my-5 wow bounceInRight" style = "width: 22.5rem;" data-wow-duration="2s">
+                <div class = "card mx-5 my-5" style = "width: 22.5rem;">
                     <div class = "card-body">
                         <img src = "img/home.png" class = "mx-auto d-block" style="width:18rem;">
                         <br>
-                        <h4 class = "card-title text-dark text-center">Smart Home GUI</h5>
-                        <p class = "card-text text-dark text-center">Smart Home GUI was done as a project in my Object Oriented Programming (OOP) module. During this module, we programmed a simulation of a Graphical User Interface (GUI). Within my GUI, I made use of images, button and slider to create an interface which allows user to toggle home appliances. The coding was done in Java Language.</p>    
+                        <h4 class = "card-title text-center">Smart Home GUI</h5>
+                        <p class = "card-text text-light text-center">Smart Home GUI was done as a project in my Object Oriented Programming (OOP) module. During this module, we programmed a simulation of a Graphical User Interface (GUI). Within my GUI, I made use of images, button and slider to create an interface which allows user to toggle home appliances. The coding was done in Java Language.</p>    
                     </div>
                 </div>
             </div>
@@ -206,24 +209,24 @@
 
 
         <section id="achievements" style = "height: 100%;">
-            <h1 class = "wow zoomInDown" data-wow-duration="2s">>my_achievements<span class = "animated infinite fadeIn">_</span></h1>
-            <div class = "row justify-content-center" style= "width: 100%;">
+            <h1 data-aos="zoom-in">>my_achievements<span class = "animated infinite fadeIn">_</span></h1>
+            <div class = "row justify-content-center" style= "width: 100%;" data-aos="fade-up">
 
-                <div class="card bg-warning mx-5 my-5 wow bounceInRight" style="width: 22.5rem;" data-wow-duration="2s">
+                <div class="card bg-warning mx-5 my-5" style="width: 22.5rem;">
                     <div class="card-body">
                         <h4 class="card-title text-dark text-center"><strong>Sanmina SCI<br> System Prize</strong></h4>
                         <p class="card-text text-dark text-center">Awarded to Top 5% of graduands of Diploma in Singapore Polytechnic in 2019. </p>
                     </div>
                 </div>
 
-                <div class = "card bg-warning mx-5 my-5 wow bounceInRight" style = "width: 22.5rem;" data-wow-duration="2s">
+                <div class = "card bg-warning mx-5 my-5" style = "width: 22.5rem;">
                     <div class = "card-body">
                         <h4 class = "card-title text-dark text-center"><strong>Diploma with Merit</strong></h4>
                         <p class = "card-text text-dark text-center">Awarded to Top 10% of graduands in Singapore Polytechnic in 2019.</p>
                     </div>
                 </div>
 
-                <div class = "card bg-warning mx-5 my-5 wow bounceInRight" style = "width: 22.5rem;" data-wow-duration="2s">
+                <div class = "card bg-warning mx-5 my-5" style = "width: 22.5rem;">
                     <div class = "card-body">
                         <h4 class = "card-title text-dark text-center"><strong>Model Student Award</strong></h4>
                         <p class = "card-text text-dark text-center">The award is presented to students who potrays examplery SP CORE Values and contributed significantly in CCAs while excelling academically.</p>
@@ -233,22 +236,22 @@
 
 
 
-            <div class = "row justify-content-center" style= "width: 100%;">
-                <div class="card bg-warning mx-5 my-5 wow bounceInLeft" style="width: 22.5rem;" data-wow-duration="2s">
+            <div class = "row justify-content-center" style= "width: 100%;" data-aos="fade-up">
+                <div class="card bg-warning mx-5 my-5" style="width: 22.5rem;">
                     <div class="card-body">
                         <h4 class="card-title text-dark text-center"><strong>POL-ITE Games 2018 Champion (Table Tennis)</strong></h4>
                         <p class="card-text text-dark text-center">POL-ITE Games is a yearly competition between polytechnics and ITE. This award is given to participants who triumphed above the other institutions.</p>
                     </div>
                 </div>
 
-                <div class = "card bg-warning mx-5 my-5 wow bounceInLeft" style = "width: 22.5rem;" data-wow-duration="2s">
+                <div class = "card bg-warning mx-5 my-5" style = "width: 22.5rem;" >
                     <div class = "card-body">
                         <h4 class = "card-title text-dark text-center"><strong>Director's Honour Roll AY16/17</strong></h4>
                         <p class = "card-text text-dark text-center">Director's Honours Roll is given out to top 10% of students from each course at the of the Academic Year.</p>
                     </div>
                 </div>
 
-                <div class = "card bg-warning mx-5 my-5 wow bounceInLeft" style = "width: 22.5rem;" data-wow-duration="2s">
+                <div class = "card bg-warning mx-5 my-5" style = "width: 22.5rem;">
                     <div class = "card-body">
                         <h4 class = "card-title text-dark text-center"><strong>Director's Honour Roll AY17/18</strong></h4>
                         <p class = "card-text text-dark text-center">Director's Honours Roll is given out to top 10% of students from each course at the of the Academic Year.</p>
@@ -257,22 +260,22 @@
             </div>
 
 
-            <div class = "row justify-content-center" style= "width: 100%;">
-                <div class="card bg-warning mx-5 my-5 wow bounceInRight" style="width: 22.5rem;" data-wow-duration="2s">
+            <div class = "row justify-content-center" style= "width: 100%;" data-aos="fade-up">
+                <div class="card bg-warning mx-5 my-5" style="width: 22.5rem;">
                     <div class="card-body">
                         <h4 class="card-title text-dark text-center"><strong>CSIT Diploma Scholarship</strong></h4>
                         <p class="card-text text-dark text-center">CSIT Diploma Scholarship was given to scholars from IT related courses in polytechnics.</p>
                     </div>
                 </div>
 
-                <div class = "card bg-warning mx-5 my-5 wow bounceInRight" style = "width: 22.5rem;" data-wow-duration="2s">
+                <div class = "card bg-warning mx-5 my-5" style = "width: 22.5rem;">
                     <div class = "card-body">
                         <h4 class = "card-title text-dark text-center"><strong>IVP Games 2019 <br>(Table Tennis) 4th</strong></h4>
                         <p class = "card-text text-dark text-center">Institute-Varsity-Polytechnic (IVP) Games is participated by top participants from POL-ITE Games and Singapore University Games (SUniG). </p>
                     </div>
                 </div>
 
-                <div class = "card bg-warning mx-5 my-5 wow bounceInRight" style = "width: 22.5rem;" data-wow-duration="2s">
+                <div class = "card bg-warning mx-5 my-5" style = "width: 22.5rem;">
                     <div class = "card-body">
                         <h4 class = "card-title text-dark text-center"><strong>Certificate of Merit (COM)</strong></h4>
                         <p class = "card-text text-dark text-center">Certificate of Merit is given to top 5% of graduands of ITE of each course.</p>
@@ -292,12 +295,17 @@
         <script>
             ScrollOut();
         </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init(
+                {
+                    offset:200,
+                    duration:1500
+                }
+            );
+        </script>
 
 
-<script src="js/wow.min.js"></script>
-<script>
-new WOW().init();
-</script>
     </body>
 
     <footer>
