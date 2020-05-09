@@ -84,6 +84,55 @@ body{
   text-shadow: 0 0 10px #7BD890;
 }
 
+#mycontributions {
+  background: #222222;
+  height:100%;
+  color: #FFFFFF;
+}
+
+
+#mycontributions h1{
+  color: #7BD890;
+  font-size: 3.5vw;
+  padding-top:5vh;
+  padding-left: 2vw;
+  padding-bottom: 25px;
+  text-shadow: 0 0 10px #7BD890;
+}
+#mycontributions .container{
+  width: 50%;
+  border: 3px solid #F1F1F1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0;
+}
+#mycontributions .top {
+  padding: 10px;
+  background: #F1F1F1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#mycontributions .dot{
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#mycontributions .content{
+  padding:10px;
+  background: #F1F1F1;
+  color: #222222;
+}
+
+.content h4{
+  text-decoration-line: underline;
+}
+.content p {
+  line-height: 20%;
+}
 
 .aboutmeparagraph{
   color: #FFFFFF;
@@ -200,7 +249,7 @@ body{
   color: #FC618D;
 }
 .card-body img{
-  width: 10rem;
+  width: 15rem;
   height: auto;
 }
 
@@ -261,8 +310,18 @@ footer{
       text-align: left;
   }
 
-  .pb p{
-      margin-left: 10%;
+  #mycontributions h1{
+    font-size: 5vw;
+    padding: 0 0 0 0;
+    margin-left: 2.5%;
+    justify-content: left;
+  }
+  #mycontributions .container{
+    width:90%;
+  }
+
+  #mycontributions .content p{
+    font-size: 20px;
   }
 
   #projects h1{
@@ -297,6 +356,20 @@ footer{
   
   #aboutmepage h1{
       font-size: 5vw;
+  }
+
+  #mycontributions h1{
+    font-size: 5vw;
+    padding: 0 0 0 0;
+    margin-left: 2.5%;
+    justify-content: left;
+  }
+  #mycontributions .container{
+    width:90%;
+  }
+
+  #mycontributions .content p{
+    font-size: 20px;
   }
 
   #projects h1{
@@ -341,6 +414,24 @@ footer{
 
   #aboutmepage img{
       margin-top: 100px;
+  }
+
+  #aboutmepage p{
+    font-size: 15px;
+  }
+
+  #mycontributions h1{
+    font-size: 8vw;
+    padding: 0 0 0 0;
+    text-align: center;
+    justify-content: center;
+  }
+  #mycontributions .container{
+    width:90%;
+  }
+
+  #mycontributions .content p{
+    font-size: 18px;
   }
 
   #projects h1{
@@ -390,6 +481,20 @@ footer{
       font-size: 1.8vw;
   }
 
+  #mycontributions h1{
+    font-size: 8vw;
+    padding: 0 0 0 0;
+    text-align: center;
+    justify-content: center;
+  }
+  #mycontributions .container{
+    width:90%;
+  }
+
+  #mycontributions .content p{
+    font-size: 15px;
+  }
+
   #projects h1{
       text-align: center;
       font-size: 8vw;
@@ -429,6 +534,23 @@ footer{
       colour: #FFFFFF;
       margin-left: 5%;;
   }
+
+
+  #mycontributions h1{
+    font-size: 8vw;
+    padding: 0 0 0 0;
+    text-align: center;
+    justify-content: center;
+  }
+  #mycontributions .container{
+    width:90%;
+  }
+
+  #mycontributions .content p{
+    font-size: 15px;
+  }
+
+
   #projects h1{
       text-align: center;
   }
@@ -474,16 +596,19 @@ footer{
       color: #FFFFFF;
       margin-left:5%;
   }
-
-  .pb p{
-      font-size: 10px;
-      margin: 0 0 0 10;
+  #mycontributions h1{
+    font-size: 10vw;
+    padding: 0 0 0 0;
+    text-align: center;
+    justify-content: center;
   }
-  
-  .progress-bar span{
-      font-size: 10px;
+  #mycontributions .container{
+    width:90%;
   }
 
+  #mycontributions .content p{
+    font-size: 10px;
+  }
   #projects div{
       margin: 0 0 0 0;
   }
@@ -493,6 +618,9 @@ footer{
       text-align: center;
   }
 
+  .card-body img{
+      width:10rem;
+  }
   #achievements h1{
       font-size: 10vw;
       text-align: center;
