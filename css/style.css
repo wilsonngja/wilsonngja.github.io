@@ -5,12 +5,12 @@ body{
   background-color: #f4f4f4;
 }
 
+
 /*Navbar*/
 .navbar{
   justify-content: center;
   background-color: #252525;
   border-bottom:#948AE3 5px solid;
-
 }
 /*Content in Navbar*/
 .nav-link{
