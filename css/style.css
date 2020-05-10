@@ -9,20 +9,20 @@ body{
 .navbar{
   justify-content: center;
   background-color: #252525;
-  border-bottom:#ffff4d 5px solid;
+  border-bottom:#948AE3 5px solid;
 
 }
 /*Content in Navbar*/
 .nav-link{
-  color: #6666ff;
+
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 0 0 0;
 }
 
 .nav-link:hover{
-  color: #ffff4d;
-}   
+  text-decoration: underline !important;
+}
 
 .bg{
   background-image: url("../img/background.jpg");
@@ -60,7 +60,7 @@ body{
 #aboutmepage{
   background: #222222;
   width:100%;
-  border-bottom: 3px solid #ffff4d;
+  border-bottom: 5px solid #7BD890;
 }
 
 #aboutmepage .row{
@@ -88,23 +88,27 @@ body{
   background: #222222;
   height:100%;
   color: #FFFFFF;
+  border-bottom: 5px solid #FD9363;
 }
 
 
 #mycontributions h1{
-  color: #7BD890;
+  color: #FD9363;
   font-size: 3.5vw;
   padding-top:5vh;
   padding-left: 2vw;
   padding-bottom: 25px;
-  text-shadow: 0 0 10px #7BD890;
+  text-shadow: 0 0 10px #FD9363;
 }
 #mycontributions .container{
-  width: 50%;
   border: 3px solid #F1F1F1;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #F1F1F1;
   padding: 0;
+
 }
 #mycontributions .top {
   padding: 10px;
@@ -131,98 +135,13 @@ body{
   text-decoration-line: underline;
 }
 .content p {
-  line-height: 20%;
+  line-height: 100%;
 }
 
 .aboutmeparagraph{
   color: #FFFFFF;
 }
 
-.progress{
-  margin-left: 10%;
-  margin-right:20%;
-}
-
-.pb p{
-  margin-left: 8.5%;
-  padding-top: 1vh;
-  margin-bottom: 0;
-  color: #FC618D;
-}
-
-.pb{
-  margin-bottom: 10%;
-  color: #FFFFFF;
-}
-.progress {
-  box-shadow: 0 0 20px #ffff4d;
-}
-
-
-.progress-bar span{
-  color: #202020;
-  font-size: 0.8vw;
-  font-weight: bold;
-}
-#html-scroll[data-scroll]{
-  transition: all 2s;
-}
-#html-scroll[data-scroll="in"]{
-  width:55%; 
-}
-#html-scroll[data-scroll="out"]{
-  width:1%;
-}
-
-#ass-scroll[data-scroll]{
-  transition: all 2s;
-}
-#ass-scroll[data-scroll="in"]{
-  width:50%; 
-}
-#ass-scroll[data-scroll="out"]{
-  width:1%;
-}
-
-#c-scroll[data-scroll]{
-  transition: all 2s;
-}
-#c-scroll[data-scroll="in"]{
-  width:70%; 
-}
-#c-scroll[data-scroll="out"]{
-  width:1%;
-}
-
-#java-scroll[data-scroll]{
-  transition: all 2s;
-}
-#java-scroll[data-scroll="in"]{
-  width:70%; 
-}
-#java-scroll[data-scroll="out"]{
-  width:1%;
-}
-
-#python-scroll[data-scroll]{
-  transition: all 2s;
-}
-#python-scroll[data-scroll="in"]{
-  width:80%; 
-}
-#python-scroll[data-scroll="out"]{
-  width:1%;
-}
-
-#cnet-scroll[data-scroll]{
-  transition: all 2s;
-}
-#cnet-scroll[data-scroll="in"]{
-  width:90%; 
-}
-#cnet-scroll[data-scroll="out"]{
-  width:1%;
-}
 
 
 #projects{
@@ -231,28 +150,76 @@ body{
 }
 
 #projects h1{
-  color:#7BD890;
+  color:#FC618D;
   font-size: 8vw;
   padding-top:5vh;
   padding-left: 2vw;
   padding-bottom: 25px;
-  text-shadow: 0 0 10px #7BD890;
+  text-shadow: 0 0 10px #FC618D;
   text-align: left;
 }
 
 #projects .card{
   background-color: #222222;
-  box-shadow: 0 0 15px #FC618D;
+  padding: 20px 20px 20px 20px;
+  width:30rem;
+  height:30rem;
+  margin: 5rem 5rem 5rem 5rem;
 }
+
+
+#projects .card::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 50%;
+  height: 50%;
+  border-bottom: 3px solid #FC618D;
+  border-left:3px solid #FC618D;
+  animation: mymove 5s infinite;
+}
+
+#projects .card::after{
+  content: '';
+  position: absolute;
+  right:0;
+  top:0;
+  width: 50%;
+  height: 50%;
+  border-right: 3px solid #FC618D;
+  border-top:3px solid #FC618D;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove{
+  0%,100%{
+    width: 0%;
+    height:0%;
+  }
+  50%{
+    width:100%;
+    height: 100%;
+  }
+}
+
+
 
 #projects .card-title{
   color: #FC618D;
 }
+
+#projects .card-body {
+  border: 1px solid #FC618D;
+}
 .card-body img{
-  width: 15rem;
+  width: 7.5rem;
   height: auto;
 }
 
+#projects .card-body p{
+  font-size: 16px;
+}
 
 #achievements{
   background: #222222;
@@ -316,12 +283,9 @@ footer{
     margin-left: 2.5%;
     justify-content: left;
   }
-  #mycontributions .container{
-    width:90%;
-  }
 
   #mycontributions .content p{
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #projects h1{
@@ -364,14 +328,12 @@ footer{
     margin-left: 2.5%;
     justify-content: left;
   }
-  #mycontributions .container{
-    width:90%;
-  }
+
 
   #mycontributions .content p{
-    font-size: 20px;
-  }
+    font-size: 12px;
 
+  }
   #projects h1{
       text-align: left;
       font-size: 5vw;
@@ -434,11 +396,17 @@ footer{
     font-size: 18px;
   }
 
+  #projects .card {
+    margin: 10px 10px 10px 10px;
+  }
   #projects h1{
       text-align: center;
       font-size: 8vw;
   }
 
+  #projects .card-body img{
+    width:10.5rem;
+  }
   .aboutmeparagraph p{
       margin-left: 2.5%;
       text-align: left;
@@ -500,6 +468,13 @@ footer{
       font-size: 8vw;
   }
 
+  #projects .card-body img{
+    width:12.5rem;
+  }
+
+  #projects .card-body p{
+    font-size: 14px;
+  }
   #achievements h1{
       font-size: 8vw;
       text-align: center;
@@ -555,6 +530,13 @@ footer{
       text-align: center;
   }
 
+  #projects .card-body img{
+    width: 10rem;
+  }
+
+  #projects .card-body p{
+    font-size: 14px;
+  }
   #achievements h1{
       font-size: 8vw;
       text-align: center;
@@ -614,12 +596,18 @@ footer{
   }
 
   #projects h1{
-      font-size: 12.5vw;
+      font-size: 10vw;
       text-align: center;
   }
 
+  #projects .card {
+    margin: 10px 10px 10px 10px;
+  }
+  #projects .card-body p{
+    font-size: 13px;
+  }
   .card-body img{
-      width:10rem;
+      width: 9rem;
   }
   #achievements h1{
       font-size: 10vw;
