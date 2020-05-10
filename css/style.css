@@ -199,7 +199,7 @@ body{
   content:'';
   position: absolute;
   width:100%;
-  height:2px;
+  height:3px;
   background: #FC618D;
   animation: animate 4s linear infinite;
 }
