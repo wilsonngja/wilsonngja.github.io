@@ -221,50 +221,7 @@ body{
     transform: scaleX(0);
     transform-origin:right;
   }
-}
 
-/*
-#projects .card::before{
-  content: '';
-  position: absolute;
-  left:0;
-  bottom:0;
-  width: 15rem;
-  height: 15rem;
-  border-bottom: 4px solid #FC618D;
-  border-left:4px solid #FC618D;
-  animation: mymove 4s infinite;
-
-}
-
-#projects .card::after{
-  content: '';
-  position: absolute;
-  right:0;
-  top:0;
-  width: 15rem;
-  height: 15rem;
-  border-right: 4px solid #FC618D;
-  border-top:4px solid #FC618D;
-  animation: mymove 4s infinite;
-}
-
-@keyframes mymove{
-  0%{
-    width: 15rem;
-    height:15rem;
-  }
-  25%{
-    width:30rem;
-    height: 0rem;
-  }
-  100%{
-    width:0rem;
-    height:30rem;
-  }
-  
-}
-*/
 
 
 #projects .card-title{
