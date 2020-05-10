@@ -167,17 +167,74 @@ body{
   margin: 5rem 5rem 5rem 5rem;
 }
 
+#projects .card span{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#projects .card span:nth-child(1){
+  transform:rotate(0deg);
+}
+#projects .card span:nth-child(2){
+  transform:rotate(90deg);
+}
+#projects .card span:nth-child(3){
+  transform:rotate(180deg);
+}
+#projects .card span:nth-child(4){
+  transform:rotate(270deg);
+}
 
+#projects .card span:nth-child(2):before{
+  animation-delay: -2s;
+}
+#projects .card span:nth-child(4):before{
+  animation-delay: -2s;
+}
+#projects .card span:before{
+  content:'';
+  position: absolute;
+  width:100%;
+  height:2px;
+  background: #FC618D;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: scaleX(0);
+    transform-origin:left;
+  }
+  50%{
+    transform: scaleX(1);
+    transform-origin:left;
+  }
+  50.1%{
+    transform: scaleX(1);
+    transform-origin:right;
+  }
+  100%{
+    transform: scaleX(0);
+    transform-origin:right;
+  }
+}
+
+/*
 #projects .card::before{
   content: '';
   position: absolute;
   left:0;
   bottom:0;
-  width: 50%;
-  height: 50%;
-  border-bottom: 3px solid #FC618D;
-  border-left:3px solid #FC618D;
-  animation: mymove 5s infinite;
+  width: 15rem;
+  height: 15rem;
+  border-bottom: 4px solid #FC618D;
+  border-left:4px solid #FC618D;
+  animation: mymove 4s infinite;
+
 }
 
 #projects .card::after{
@@ -185,24 +242,29 @@ body{
   position: absolute;
   right:0;
   top:0;
-  width: 50%;
-  height: 50%;
-  border-right: 3px solid #FC618D;
-  border-top:3px solid #FC618D;
-  animation: mymove 5s infinite;
+  width: 15rem;
+  height: 15rem;
+  border-right: 4px solid #FC618D;
+  border-top:4px solid #FC618D;
+  animation: mymove 4s infinite;
 }
 
 @keyframes mymove{
-  0%,100%{
-    width: 0%;
-    height:0%;
+  0%{
+    width: 15rem;
+    height:15rem;
   }
-  50%{
-    width:100%;
-    height: 100%;
+  25%{
+    width:30rem;
+    height: 0rem;
   }
+  100%{
+    width:0rem;
+    height:30rem;
+  }
+  
 }
-
+*/
 
 
 #projects .card-title{
