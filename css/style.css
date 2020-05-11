@@ -14,16 +14,13 @@ body{
 }
 /*Content in Navbar*/
 .nav-link{
-
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 0 0 0;
 }
-
 .nav-link:hover{
   text-decoration: underline !important;
 }
-
 .bg{
   background-image: url("../img/background.jpg");
   background-size: cover;
@@ -35,8 +32,6 @@ body{
 .name1, .name2, .name3 {
   padding-top:40vh;
   font-size:5vw;
-
-
 }
 /*This is the "Wilson Ng"*/
 .name1{
@@ -62,7 +57,6 @@ body{
   width:100%;
   border-bottom: 5px solid #7BD890;
 }
-
 #aboutmepage .row{
   width:100%;
 
@@ -74,7 +68,6 @@ body{
   height:25%;
   border-radius: 50%;
 }
-
 #aboutmepage h1{
   color: #7BD890;
   font-size: 3.5vw;
@@ -83,6 +76,11 @@ body{
   padding-bottom: 25px;
   text-shadow: 0 0 10px #7BD890;
 }
+.aboutmeparagraph p{
+  margin-left: 2.5%;
+  color:#FFFFFF;
+}
+
 
 #mycontributions {
   background: #222222;
@@ -90,8 +88,6 @@ body{
   color: #FFFFFF;
   border-bottom: 5px solid #FD9363;
 }
-
-
 #mycontributions h1{
   color: #FD9363;
   font-size: 3.5vw;
@@ -100,46 +96,71 @@ body{
   padding-bottom: 25px;
   text-shadow: 0 0 10px #FD9363;
 }
-#mycontributions .container{
-  border: 3px solid #F1F1F1;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: #F1F1F1;
-  padding: 0;
-
+#mycontributions .card{
+  background-color: #222222;
+  padding: 20px 20px 20px 20px;
+  width:28rem;
+  height:28rem;
+  margin: 2rem 2rem 2rem 2rem;
 }
-#mycontributions .top {
-  padding: 10px;
-  background: #F1F1F1;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+#mycontributions .card span{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: inline-block;
+  box-sizing: border-box;
 }
-
-#mycontributions .dot{
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
+#mycontributions .card-body {
+  border: 1px solid #FD9363;
 }
-
-#mycontributions .content{
-  padding:10px;
-  background: #F1F1F1;
-  color: #222222;
+#mycontributions .card-body h3{
+  color: #FD9363;
 }
-
-.content h4{
-  text-decoration-line: underline;
+#mycontributions .card span:nth-child(1){
+  transform:rotate(0deg);
 }
-.content p {
-  line-height: 100%;
+#mycontributions .card span:nth-child(2){
+  transform:rotate(90deg);
 }
-
-.aboutmeparagraph{
-  color: #FFFFFF;
+#mycontributions .card span:nth-child(3){
+  transform:rotate(180deg);
+}
+#mycontributions .card span:nth-child(4){
+  transform:rotate(270deg);
+}
+#mycontributions .card span:nth-child(2):before{
+  animation-delay: -2s;
+}
+#mycontributions .card span:nth-child(4):before{
+  animation-delay: -2s;
+}
+#mycontributions .card span:before{
+  content:'';
+  position: absolute;
+  width:100%;
+  height:3px;
+  background: #FD9363;
+  animation: animate0 4s linear infinite;
+}
+@keyframes animate0{
+  0%{
+    transform: scaleX(0);
+    transform-origin:left;
+  }
+  50%{
+    transform: scaleX(1);
+    transform-origin:left;
+  }
+  50.1%{
+    transform: scaleX(1);
+    transform-origin:right;
+  }
+  100%{
+    transform: scaleX(0);
+    transform-origin:right;
+  }
 }
 
 
@@ -150,12 +171,12 @@ body{
 }
 
 #projects h1{
-  color:#FF0000;
+  color:#DC143C;
   font-size: 8vw;
   padding-top:5vh;
   padding-left: 2vw;
   padding-bottom: 25px;
-  text-shadow: 0 0 10px #FF0000;
+  text-shadow: 0 0 10px #DC143C;
   text-align: left;
 }
 
@@ -188,7 +209,6 @@ body{
 #projects .card span:nth-child(4){
   transform:rotate(270deg);
 }
-
 #projects .card span:nth-child(2):before{
   animation-delay: -2s;
 }
@@ -200,10 +220,9 @@ body{
   position: absolute;
   width:100%;
   height:3px;
-  background: #FF0000;
+  background: #DC143C;
   animation: animate 4s linear infinite;
 }
-
 @keyframes animate{
   0%{
     transform: scaleX(0);
@@ -222,22 +241,16 @@ body{
     transform-origin:right;
   }
 }
-
-
-
 #projects .card-title{
-  color: #FF0000;
+  color: #DC143C;
 }
-
 #projects .card-body {
-  border: 1px solid #FF0000;
+  border: 1px solid #DC143C;
 }
-
 #projects {
-  border-bottom: 5px solid #FF0000;
+  border-bottom: 5px solid #DC143C;
 }
-
-.card-body img{
+#projects .card-body img{
   width: 20rem;
   height: auto;
 }
@@ -247,14 +260,15 @@ body{
 #projects .card-body p{
   font-size: 20px;
 }
-
 #encryptionimage {
   width:25rem;
 }
-
 #csitlogo{
   width:7.5rem;
 }
+
+
+
 #achievements{
   background: #222222;
   width: 100%;
@@ -273,7 +287,6 @@ body{
 #achievements .card{
   box-shadow: 0 0 30px #FCE565;
 }
-
 #achievements .card-title{
   text-shadow: 0 0 10px #FFFFFF;
   
@@ -285,7 +298,6 @@ footer{
   background-color: #222222;
   border-top: 5px solid #FCE565;
 }
-
 
 
 @media (min-width: 1920px){
@@ -318,8 +330,17 @@ footer{
     justify-content: left;
   }
 
-  #mycontributions .content p{
-    font-size: 15px;
+  #mycontributions .card{
+    width:35rem;
+    height:35rem;
+  }
+
+  #mycontributions .card-body h3{
+    font-size:35px;
+  }
+
+  #mycontributions .card-body p{
+    font-size: 21px;
   }
 
   #projects h1{
@@ -338,7 +359,6 @@ footer{
   }
 
 }
-
 @media (max-width: 1536px){
 
   .nav-link{
@@ -361,10 +381,17 @@ footer{
     justify-content: left;
   }
 
+  #mycontributions .card{
+    width:28rem;
+    height:28rem;
+  }
 
-  #mycontributions .content p{
-    font-size: 12px;
+  #mycontributions .card-body h3{
+    font-size:28px;
+  }
 
+  #mycontributions .card-body p{
+    font-size: 15px;
   }
   #projects h1{
       text-align: left;
@@ -387,7 +414,6 @@ footer{
   }
 
 }
-
 @media (max-width: 950px){
 
   .nav-link{
@@ -416,12 +442,19 @@ footer{
     text-align: center;
     justify-content: center;
   }
-  #mycontributions .container{
-    width:90%;
+
+  #mycontributions .card{
+    width:30rem;
+    height:30rem;
+    justify-content: center;
+  }
+  
+  #mycontributions .card-body h3{
+    font-size: 25px;
   }
 
-  #mycontributions .content p{
-    font-size: 18px;
+  #mycontributions .card-body p{
+    font-size: 17px;
   }
 
   #projects .card {
@@ -454,7 +487,6 @@ footer{
       margin-left:0;
   }
 }
-
 @media (max-width: 768px){
 
   .nav-link{
@@ -487,12 +519,18 @@ footer{
     text-align: center;
     justify-content: center;
   }
-  #mycontributions .container{
-    width:90%;
+
+  #mycontributions .card {
+    width:30rem;
+    height:30rem;
   }
 
-  #mycontributions .content p{
-    font-size: 15px;
+  #mycontributions .card-body h3{
+    font-size: 25px;
+  }
+  
+  #mycontributions .card-body p{
+    font-size: 17px;
   }
 
   #projects h1{
@@ -521,7 +559,6 @@ footer{
       margin-left:0;
   }
 }
-
 @media (max-width: 650px){
   .name1, .name2, .name3 {
     font-size: 7vw;
@@ -553,12 +590,19 @@ footer{
     text-align: center;
     justify-content: center;
   }
-  #mycontributions .container{
-    width:90%;
+
+  #mycontributions .card {
+    width: 30rem;
+    height: 30rem;
+    justify-content: center;
   }
 
-  #mycontributions .content p{
-    font-size: 15px;
+  #mycontributions .card-body h3{
+    font-size: 24px;
+  }
+
+  #mycontributions .card-body p{
+    font-size: 16px;
   }
 
 
@@ -592,8 +636,6 @@ footer{
       margin-left:0;
   }
 }
-
-
 @media (max-width: 500px){
   .name1, .name2, .name3 {
     font-size: 7vw;
@@ -625,12 +667,19 @@ footer{
     text-align: center;
     justify-content: center;
   }
-  #mycontributions .container{
-    width:90%;
+
+  #mycontributions .card{
+    width:20rem;
+    height:20rem;
+    justify-content: center;
   }
 
-  #mycontributions .content p{
-    font-size: 15px;
+  #mycontributions .card-body h3{
+    font-size: 16px;
+  }
+
+  #mycontributions .card-body p{
+    font-size: 8.5px;
   }
 
 
@@ -702,12 +751,16 @@ footer{
     text-align: center;
     justify-content: center;
   }
-  #mycontributions .container{
-    width:90%;
+  #mycontributions .card{
+      width: 18rem;
+      height:18rem;
   }
-
-  #mycontributions .content p{
-    font-size: 10px;
+  #mycontributions .card-body h3{
+    font-size: 14px;
+  }
+  
+  #mycontributions .card-body p{
+    font-size: 7px;
   }
   #projects div{
       margin: 0 0 0 0;
