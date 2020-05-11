@@ -699,7 +699,7 @@ footer{
     font-size:20.5px;
   }
   #projects .card-body p{
-    font-size: 10.5px;
+    font-size: 10px !important;
   }
   #achievements h1{
       font-size: 8vw;
