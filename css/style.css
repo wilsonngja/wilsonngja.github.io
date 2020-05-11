@@ -150,20 +150,20 @@ body{
 }
 
 #projects h1{
-  color:#FC618D;
+  color:#FF0000;
   font-size: 8vw;
   padding-top:5vh;
   padding-left: 2vw;
   padding-bottom: 25px;
-  text-shadow: 0 0 10px #FC618D;
+  text-shadow: 0 0 10px #FF0000;
   text-align: left;
 }
 
 #projects .card{
   background-color: #222222;
   padding: 20px 20px 20px 20px;
-  width:30rem;
-  height:30rem;
+  width:40rem;
+  height:40rem;
   margin: 5rem 5rem 5rem 5rem;
 }
 
@@ -200,7 +200,7 @@ body{
   position: absolute;
   width:100%;
   height:3px;
-  background: #FC618D;
+  background: #FF0000;
   animation: animate 4s linear infinite;
 }
 
@@ -226,21 +226,35 @@ body{
 
 
 #projects .card-title{
-  color: #FC618D;
+  color: #FF0000;
 }
 
 #projects .card-body {
-  border: 1px solid #FC618D;
+  border: 1px solid #FF0000;
 }
+
+#projects {
+  border-bottom: 5px solid #FF0000;
+}
+
 .card-body img{
-  width: 7.5rem;
+  width: 20rem;
   height: auto;
 }
-
+#projects .card-body h4{
+  font-size: 30px;
+}
 #projects .card-body p{
-  font-size: 16px;
+  font-size: 20px;
 }
 
+#encryptionimage {
+  width:25rem;
+}
+
+#csitlogo{
+  width:7.5rem;
+}
 #achievements{
   background: #222222;
   width: 100%;
@@ -312,9 +326,7 @@ footer{
       font-size: 5vw;
   }
   
-  #projects {
-    border-bottom: 5px solid #FCE565;
-  }
+  
 
   #achievements h1{
       font-size: 5vw;
@@ -359,14 +371,10 @@ footer{
       font-size: 5vw;
   }
 
-  .aboutmeparagraph p{
+  #aboutmepage .aboutmeparagraph p{
       margin-left: 2.5%;
       font-size: 1.5vw;
       text-align: left;
-  }
-
-  .pb p{
-      margin-left: 10%;
   }
 
   #achievements h1{
@@ -423,9 +431,13 @@ footer{
       text-align: center;
       font-size: 8vw;
   }
-
+  
   #projects .card-body img{
-    width:10.5rem;
+    width:24rem;
+  }
+
+  #csitlogo {
+    width:10rem !important;
   }
   .aboutmeparagraph p{
       margin-left: 2.5%;
@@ -489,11 +501,15 @@ footer{
   }
 
   #projects .card-body img{
-    width:12.5rem;
+    width:22rem;
+  }
+
+  #csitlogo{
+    width:10rem !important;
   }
 
   #projects .card-body p{
-    font-size: 14px;
+    font-size: 18px;
   }
   #achievements h1{
       font-size: 8vw;
@@ -550,10 +566,18 @@ footer{
       text-align: center;
   }
 
-  #projects .card-body img{
-    width: 10rem;
+  #projects .card{
+    width:30rem;
+    height:30rem;
+    justify-content: center;
+   
   }
-
+  #projects .card-body img{
+    width: 15rem;
+  }
+  #csitlogo {
+    width:9rem !important;
+  }
   #projects .card-body p{
     font-size: 14px;
   }
@@ -569,6 +593,80 @@ footer{
   }
 }
 
+
+@media (max-width: 500px){
+  .name1, .name2, .name3 {
+    font-size: 7vw;
+}
+
+  #aboutmepage img{
+      width:10%;
+  }
+  #aboutmepage h1{
+      text-align: center;
+      font-size: 8vw;
+  }
+
+  .aboutmeparagraph{
+      text-align: center;
+  }
+
+  .aboutmeparagraph p{
+      text-align: center;
+      font-size:3vw;
+      colour: #FFFFFF;
+      margin-left: 5%;;
+  }
+
+
+  #mycontributions h1{
+    font-size: 8vw;
+    padding: 0 0 0 0;
+    text-align: center;
+    justify-content: center;
+  }
+  #mycontributions .container{
+    width:90%;
+  }
+
+  #mycontributions .content p{
+    font-size: 15px;
+  }
+
+
+  #projects h1{
+      text-align: center;
+  }
+
+  #projects .card{
+    width:24rem;
+    height:24rem;
+    justify-content: center;
+   
+  }
+  #projects .card-body img{
+    width: 12rem;
+  }
+  #csitlogo {
+    width:6rem !important;
+  }
+  #projects .card-body h4{
+    font-size:20.5px;
+  }
+  #projects .card-body p{
+    font-size: 11.5px;
+  }
+  #achievements h1{
+      font-size: 8vw;
+      text-align: center;
+      padding-right:5%;
+      padding-left:5%;
+  }
+
+  #achievements div{
+      margin-left:0;
+  }
+}
 @media (max-width: 375px){
 
   .name1, .name2, .name3 {
@@ -622,13 +720,24 @@ footer{
 
   #projects .card {
     margin: 10px 10px 10px 10px;
+    width:20rem;
+    height:20rem;
+  }
+
+  #projects .card-body h4{
+    font-size: 16px;
   }
   #projects .card-body p{
-    font-size: 13px;
+    font-size: 9px;
   }
   .card-body img{
-      width: 9rem;
+      width: 10rem !important;
   }
+
+  #csitlogo {
+    width:5rem !important;
+  }
+
   #achievements h1{
       font-size: 10vw;
       text-align: center;
