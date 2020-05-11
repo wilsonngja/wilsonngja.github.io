@@ -655,7 +655,7 @@ footer{
 
   .aboutmeparagraph p{
       text-align: center;
-      font-size:4.5vw;
+      font-size:4.5vw !important;
       colour: #FFFFFF;
       margin-left: 5%;;
   }
@@ -679,7 +679,7 @@ footer{
   }
 
   #mycontributions .card-body p{
-    font-size: 8.5px;
+    font-size: 8.5px !important;
   }
 
 
