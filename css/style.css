@@ -407,16 +407,26 @@ footer{
       font-size: 5vw;
   }
   
-  
-
   #achievements h1{
-      font-size: 5vw;
-      text-align: left;
-  }
+    font-size: 5vw;
+    text-align: left;
+    padding-right:5%;
+    padding-left:5%;
+}
 
-  #achievements div{
-      margin-left:0;
-  }
+#achievements .card{
+  margin: 10px 10px 10px 10px;
+  width: 30rem;
+  height:30rem;
+}
+
+#achievements .card-body h4{
+  font-size: 40px;
+}
+
+#achievements .card-body p{
+  font-size: 24px !important;
+}
 
 }
 @media (max-width: 1536px){
@@ -465,13 +475,24 @@ footer{
   }
 
   #achievements h1{
-      font-size: 5vw;
-      padding-right:5%;
-  }
+    font-size: 5vw;
+    text-align: left;
+    padding-right:5%;
+    padding-left:5%;
+}
 
-  #achievements div{
-      margin-left:0;
-  }
+#achievements .card{
+  width: 25rem;
+  height:25rem;
+}
+
+#achievements .card-body h4{
+  font-size: 35px;
+}
+
+#achievements .card-body p{
+  font-size: 18px !important;
+}
 
 }
 @media (max-width: 950px){
@@ -538,14 +559,24 @@ footer{
   }
 
   #achievements h1{
-      font-size: 8vw;
-      text-align: center;
-      padding-right:5%;
-  }
+    font-size: 8vw;
+    text-align: center;
+    padding-right:5%;
+    padding-left:5%;
+}
 
-  #achievements div{
-      margin-left:0;
-  }
+#achievements .card{
+  width: 20rem;
+  height:20rem;
+}
+
+#achievements .card-body h4{
+  font-size: 26px;
+}
+
+#achievements .card-body p{
+  font-size: 15px !important;
+}
 }
 @media (max-width: 768px){
 
@@ -610,14 +641,25 @@ footer{
     font-size: 18px;
   }
   #achievements h1{
-      font-size: 8vw;
-      text-align: center;
-      padding-right:5%;
-  }
+    font-size: 8vw;
+    text-align: center;
+    padding-right:5%;
+    padding-left:5%;
+}
 
-  #achievements div{
-      margin-left:0;
-  }
+#achievements .card{
+  margin: 10px 10px 10px 10px;
+  width: 28rem;
+  height:28rem;
+}
+
+#achievements .card-body h4{
+  font-size: 38px;
+}
+
+#achievements .card-body p{
+  font-size: 20px !important;
+}
 }
 @media (max-width: 650px){
   .name1, .name2, .name3 {
@@ -686,15 +728,25 @@ footer{
     font-size: 14px;
   }
   #achievements h1{
-      font-size: 8vw;
-      text-align: center;
-      padding-right:5%;
-      padding-left:5%;
-  }
+    font-size: 8vw;
+    text-align: center;
+    padding-right:5%;
+    padding-left:5%;
+}
 
-  #achievements div{
-      margin-left:0;
-  }
+#achievements .card{
+  margin: 10px 10px 10px 10px;
+  width: 25rem;
+  height:25rem;
+}
+
+#achievements .card-body h4{
+  font-size: 35px;
+}
+
+#achievements .card-body p{
+  font-size: 20px !important;
+}
 }
 @media (max-width: 500px){
   .name1, .name2, .name3 {
@@ -762,15 +814,25 @@ footer{
     font-size: 9px !important;
   }
   #achievements h1{
-      font-size: 8vw;
-      text-align: center;
-      padding-right:5%;
-      padding-left:5%;
-  }
+    font-size: 8vw;
+    text-align: center;
+    padding-right:5%;
+    padding-left:5%;
+}
 
-  #achievements div{
-      margin-left:0;
-  }
+#achievements .card{
+  margin: 10px 10px 10px 10px;
+  width: 20rem;
+  height:20rem;
+}
+
+#achievements .card-body h4{
+  font-size: 30px;
+}
+
+#achievements .card-body p{
+  font-size: 14px !important;
+}
 }
 @media (max-width: 375px){
 
@@ -854,7 +916,17 @@ footer{
       padding-left:5%;
   }
 
-  #achievements div{
-      margin-left:0;
+  #achievements .card{
+    margin: 10px 10px 10px 10px;
+    width: 15rem;
+    height:15rem;
+  }
+
+  #achievements .card-body h4{
+    font-size: 20px;
+  }
+
+  #achievements .card-body p{
+    font-size: 9px !important;
   }
 }
