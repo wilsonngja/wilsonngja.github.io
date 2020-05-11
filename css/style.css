@@ -264,7 +264,7 @@ body{
   width:25rem;
 }
 #csitlogo{
-  width:7.5rem;
+  width:7.5rem !important;
 }
 
 
@@ -283,15 +283,75 @@ body{
   text-shadow: 0 0 10px #FCE565;
   text-align: left;
 }
-
 #achievements .card{
-  box-shadow: 0 0 30px #FCE565;
+  background-color: #222222;
+  padding: 20px 20px 20px 20px;
+  width:20rem;
+  height:20rem;
+  margin: 5rem 5rem 5rem 5rem;
 }
 #achievements .card-title{
-  text-shadow: 0 0 10px #FFFFFF;
+  color: #FCE565;
   
 }
+#achievements .card-body {
+  border: 1px solid #FCE565;
+}
 
+
+#achievements .card span{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#achievements .card span:nth-child(1){
+  transform:rotate(0deg);
+}
+#achievements .card span:nth-child(2){
+  transform:rotate(90deg);
+}
+#achievements .card span:nth-child(3){
+  transform:rotate(180deg);
+}
+#achievements .card span:nth-child(4){
+  transform:rotate(270deg);
+}
+#achievements .card span:nth-child(2):before{
+  animation-delay: -2s;
+}
+#achievements .card span:nth-child(4):before{
+  animation-delay: -2s;
+}
+#achievements .card span:before{
+  content:'';
+  position: absolute;
+  width:100%;
+  height:3px;
+  background: #FCE565;
+  animation: award 4s linear infinite;
+}
+@keyframes award{
+  0%{
+    transform: scaleX(0);
+    transform-origin:left;
+  }
+  50%{
+    transform: scaleX(1);
+    transform-origin:left;
+  }
+  50.1%{
+    transform: scaleX(1);
+    transform-origin:right;
+  }
+  100%{
+    transform: scaleX(0);
+    transform-origin:right;
+  }
+}
 
 
 footer{
@@ -777,7 +837,7 @@ footer{
     font-size: 16px;
   }
   #projects .card-body p{
-    font-size: 9px;
+    font-size: 8px;
   }
   .card-body img{
       width: 10rem !important;
