@@ -655,7 +655,7 @@ footer{
 
   .aboutmeparagraph p{
       text-align: center;
-      font-size:3vw;
+      font-size:4.5vw;
       colour: #FFFFFF;
       margin-left: 5%;;
   }
@@ -703,7 +703,7 @@ footer{
     font-size:20.5px;
   }
   #projects .card-body p{
-    font-size: 10.75px;
+    font-size: 10px;
   }
   #achievements h1{
       font-size: 8vw;
