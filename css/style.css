@@ -650,8 +650,8 @@ footer{
   }
 
   .aboutmeparagraph p{
-      text-align: center;
-      font-size:4vw !important;
+      text-align: center !important;
+      font-size:3.5vw !important;
       colour: #FFFFFF;
       margin-left: 5%;;
   }
@@ -675,7 +675,7 @@ footer{
   }
 
   #mycontributions .card-body p{
-    font-size: 9.5px !important;
+    font-size: 8.75px !important;
   }
 
 
@@ -693,7 +693,7 @@ footer{
     width: 12rem;
   }
   #csitlogo {
-    width:6rem !important;
+    width:6rem;
   }
   #projects .card-body h4{
     font-size:20.5px;
